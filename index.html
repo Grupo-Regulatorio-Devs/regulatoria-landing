@@ -679,11 +679,16 @@ mm.add("(prefers-reduced-motion: no-preference)", function() {
     scrollTrigger: { trigger: ".diagram-wrap", start: "top 75%" }
   });
 
-  gsap.from(".agent-node", {
-    scale: 0, autoAlpha: 0, duration: 0.6, stagger: { each: 0.08, from: "random" },
-    ease: "back.out(1.4)",
-    scrollTrigger: { trigger: ".diagram-wrap", start: "top 70%" }
-  });
+  /* fromTo y no from: con stagger {from:"random"} el lazy render de GSAP leia el
+     estado final DESPUES de que immediateRender ya habia escrito scale(0), y lo
+     registraba como destino. Resultado: 10 de 11 nodos animaban de 0 a 0 y
+     quedaban invisibles. Declarar el destino explicitamente lo hace inmune. */
+  gsap.fromTo(".agent-node",
+    { scale: 0, autoAlpha: 0 },
+    { scale: 1, autoAlpha: 1, duration: 0.6, stagger: { each: 0.08, from: "random" },
+      ease: "back.out(1.4)",
+      scrollTrigger: { trigger: ".diagram-wrap", start: "top 70%" }
+    });
 
   /* ── 5. PHASES — cards stagger from bottom ── */
   gsap.from(".phases-grid .section-header", {
