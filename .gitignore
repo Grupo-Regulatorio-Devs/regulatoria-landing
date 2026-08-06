@@ -1,0 +1,24 @@
+# Credenciales — .mcp.json lleva la API key de 21st en texto plano
+.mcp.json
+.claude/settings.local.json
+
+# Respaldos generados antes de cada cambio grande
+*.bak
+*.bak-*
+saas.html.bak-*
+live_backup_*
+prod_index_backup_*
+server_index_backup_*
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Estado local de herramientas (ruflo/claude-flow), no del sitio
+.claude-flow/
+.claude/proven-config.json
+.claude/.proven-config-version
+
+# Bytecode de Python del pipeline de build
+__pycache__/
+*.pyc
