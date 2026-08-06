@@ -189,7 +189,7 @@ a{text-decoration:none;color:inherit}
 .footer-links a{font-size:.85rem;color:var(--text-dim);transition:color .3s}
 .footer-links a:hover{color:var(--green)}
 .footer-copy{width:100%;text-align:center;margin-top:24px;padding-top:24px;border-top:1px solid var(--border);font-size:.78rem;color:var(--text-dim)}
-.reveal{opacity:0;transform:translateY(40px)}
+.reveal{will-change:opacity,transform}
 
 @media(max-width:1024px){
   .hero h1{font-size:2.8rem}
@@ -550,9 +550,9 @@ a{text-decoration:none;color:inherit}
         <a href="#agentes">Agentes</a>
         <a href="#fases">Fases</a>
         <a href="#comparativa">Comparativa</a>
-        <a href="mailto:proyectos@uranoia.cl">proyectos@uranoia.cl</a>
+        <a href="mailto:info@gruporegulatorio.cl">info@gruporegulatorio.cl</a>
       </div>
-      <div class="footer-copy">© 2026 Urano IA SpA · proyectos@uranoia.cl · +56 9 8144 0854</div>
+      <div class="footer-copy">© 2026 Grupo Regulatorio SpA · info@gruporegulatorio.cl</div>
     </div>
   </div>
 </footer>
@@ -562,8 +562,6 @@ a{text-decoration:none;color:inherit}
 <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 <script>
-gsap.registerPlugin(ScrollTrigger);
-
 /* ── Carousel (unchanged logic) ── */
 var bgSlides=document.querySelectorAll('.hero-bg-slide'),slideLabel=document.getElementById('slideLabel'),dotsContainer=document.getElementById('carouselDots'),currentBg=0,bgTimer,totalBg=bgSlides.length;
 for(var i=0;i<totalBg;i++){var d=document.createElement('button');d.className='carousel-dot'+(i===0?' active':'');d.setAttribute('aria-label','Slide '+(i+1));(function(idx){d.onclick=function(){goSlide(idx)}})(i);dotsContainer.appendChild(d)}
@@ -613,13 +611,16 @@ function drawConnections(){var dRect=diagram.getBoundingClientRect(),cx=dRect.wi
 setTimeout(drawConnections,100);window.addEventListener('resize',function(){setTimeout(drawConnections,200)});
 
 /* ── Contact form (unchanged) ── */
-document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();var btn=document.getElementById('submitBtn'),n=document.getElementById('fname').value.trim(),em=document.getElementById('email').value.trim();if(!n||!em)return;btn.textContent='Enviando...';btn.disabled=true;var subj=encodeURIComponent('[RegulatorIA] Consulta - '+n);var body=encodeURIComponent('Nombre: '+n+' '+document.getElementById('lname').value+'\nEmail: '+em+'\nEmpresa: '+document.getElementById('company').value+'\nCargo: '+document.getElementById('role').value+'\nTipo: '+document.getElementById('orgtype').value+'\nMensaje: '+document.getElementById('msg').value);window.location.href='mailto:proyectos@uranoia.cl?subject='+subj+'&body='+body;setTimeout(function(){document.getElementById('formOk').style.display='block';btn.textContent='\u2713 Enviado';btn.style.background='linear-gradient(135deg,#065F46,#059669)'},500)});
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();var btn=document.getElementById('submitBtn'),n=document.getElementById('fname').value.trim(),em=document.getElementById('email').value.trim();if(!n||!em)return;btn.textContent='Enviando...';btn.disabled=true;var subj=encodeURIComponent('[RegulatorIA] Consulta - '+n);var body=encodeURIComponent('Nombre: '+n+' '+document.getElementById('lname').value+'\nEmail: '+em+'\nEmpresa: '+document.getElementById('company').value+'\nCargo: '+document.getElementById('role').value+'\nTipo: '+document.getElementById('orgtype').value+'\nMensaje: '+document.getElementById('msg').value);window.location.href='mailto:info@gruporegulatorio.cl?subject='+subj+'&body='+body;setTimeout(function(){document.getElementById('formOk').style.display='block';btn.textContent='\u2713 Enviado';btn.style.background='linear-gradient(135deg,#065F46,#059669)'},500)});
 
 /* ══════════════════════════════════════════
    GSAP ANIMATIONS — powered by gsap-skills
    ══════════════════════════════════════════ */
 
 /* ── Accessibility: respect prefers-reduced-motion ── */
+if (window.gsap && window.ScrollTrigger) {
+gsap.registerPlugin(ScrollTrigger);
+
 var mm = gsap.matchMedia();
 
 mm.add("(prefers-reduced-motion: no-preference)", function() {
@@ -737,7 +738,11 @@ mm.add("(prefers-reduced-motion: no-preference)", function() {
   /* ── 9. SECTION HEADERS (.reveal) — universal ScrollTrigger ── */
   document.querySelectorAll('.reveal').forEach(function(el) {
     /* Skip elements already animated by specific ScrollTriggers above */
-    if (el.closest('.stats') || el.closest('.phases-grid') || el.closest('.compare-mobile') || el.closest('.cta-section')) return;
+    if (el.closest('.stats') || el.closest('.phases-grid') || el.closest('.compare-mobile') ||
+        el.closest('.cta-section') || el.closest('.diagram-section') || el.closest('.pricing-section')) return;
+    /* diagram-section y pricing-section se agregaron porque sus .reveal ya tienen
+       animacion propia arriba; sin esto recibian DOS gsap.from() y el segundo
+       tomaba como estado final el autoAlpha:0 que dejaba el primero. */
     gsap.from(el, {
       y: 40, autoAlpha: 0, duration: 0.8, ease: "power2.out",
       scrollTrigger: { trigger: el, start: "top 85%" }
@@ -766,6 +771,8 @@ mm.add("(prefers-reduced-motion: reduce)", function() {
     autoAlpha: 1, y: 0, x: 0, scale: 1
   });
 });
+
+} /* fin guarda: sin GSAP la pagina queda visible y el resto del JS sigue vivo */
 </script>
 </body>
 </html>
