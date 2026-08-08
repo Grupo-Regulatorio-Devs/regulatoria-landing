@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.gruporegulatorio.cl/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gruporegulatorio.cl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gruporegulatorio.cl/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gruporegulatorio.cl/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gruporegulatorio.cl/"/>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.gruporegulatorio.cl/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gruporegulatorio.cl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gruporegulatorio.cl/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gruporegulatorio.cl/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gruporegulatorio.cl/"/>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gruporegulatorio.cl/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gruporegulatorio.cl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gruporegulatorio.cl/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gruporegulatorio.cl/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gruporegulatorio.cl/"/>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

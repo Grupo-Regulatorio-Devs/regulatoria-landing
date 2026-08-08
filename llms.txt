@@ -1,0 +1,90 @@
+# RegulatorIA — Grupo Regulatorio SpA
+
+> Plataforma AI-native para el registro de agroquímicos y plaguicidas ante las
+> autoridades regulatorias de América Latina. Diez agentes de inteligencia
+> artificial especializados cubren el ciclo completo del registro, y cada
+> entregable pasa por la validación obligatoria de un experto regulatorio humano
+> antes de presentarse ante una autoridad.
+
+Empresa: Grupo Regulatorio SpA (Chile)
+Contacto: info@gruporegulatorio.cl · +56 9 8144 0854
+Idiomas: español (/), inglés (/en/), portugués (/pt/)
+
+## Qué hace la plataforma
+
+RegulatorIA automatiza la parte documental y analítica del registro de
+agroquímicos: estrategia regulatoria por país, toxicología in silico, armado del
+dossier, control de calidad GLP/OECD, respuesta a observaciones de la autoridad,
+generación de fichas de seguridad y etiquetas, adaptación multipaís y vigilancia
+de vencimientos. Reduce hasta en un 80% el tiempo de esa etapa. Los plazos de
+evaluación propios de cada autoridad no cambian, porque dependen del organismo.
+
+## Los diez agentes
+
+- COMPASS — estrategia regulatoria: define la vía y los requisitos por país.
+- PREDICT — toxicología in silico: modelamiento QSAR y read-across.
+- GENESIS — diseño generativo de moléculas menos tóxicas (Safe-by-Design).
+- SCOUT — inteligencia regulatoria: monitorea cambios normativos y LMR.
+- BINDER — armado y gestión documental del dossier.
+- AUDITOR — revisión automática GLP/OECD antes del envío.
+- DEFENDER — defensas técnicas ante observaciones de la autoridad.
+- SCRIBE — fichas de datos de seguridad y etiquetas GHS/CLP.
+- BRIDGE — armonización de dossiers entre países.
+- GUARD — vigilancia de vencimientos y renovaciones.
+
+## Modelo HITL (Human-in-the-Loop)
+
+La inteligencia artificial no reemplaza al experto regulatorio. Hace el trabajo
+pesado de búsqueda, análisis, redacción y control de calidad, pero ningún
+documento se presenta ante una autoridad sin la revisión y firma de un experto
+regulatorio senior. El 100% de los entregables pasa por validación humana.
+
+## Cobertura geográfica
+
+Chile (SAG), Argentina (SENASA), Brasil (IBAMA/ANVISA/MAPA), Colombia (ICA),
+Perú (SENASA) y México (COFEPRIS/SENASICA). El agente BRIDGE adapta dossiers a
+formatos internacionales: EPA (Estados Unidos), ECHA (Unión Europea) y ANVISA.
+
+## Normativas y formatos soportados
+
+CADRI · GLP y directrices OECD · clasificación GHS y CLP (Reglamento CE
+1272/2008) · fichas de datos de seguridad de 16 secciones (FDS/SDS/FISPQ) ·
+etiquetado en más de 30 idiomas.
+
+## Seguridad
+
+Cifrado AES-256 en reposo y TLS 1.3 en tránsito · aislamiento multi-tenant por
+cliente · control de acceso por roles (RBAC) · audit trail inmutable ·
+autenticación multifactor · alta disponibilidad sobre infraestructura AWS con
+réplicas regionales y respaldos automáticos. La información técnica de las
+moléculas y los estudios de los clientes no se usa para entrenar modelos ni se
+comparte con terceros.
+
+## Páginas
+
+- [Inicio (español)](https://www.gruporegulatorio.cl/): descripción completa de
+  la plataforma, los agentes, el modelo HITL, seguridad, cobertura y preguntas
+  frecuentes.
+- [Home (English)](https://www.gruporegulatorio.cl/en/): same content in English.
+- [Início (Português)](https://www.gruporegulatorio.cl/pt/): mesmo conteúdo em
+  português.
+
+## Preguntas frecuentes
+
+Las nueve preguntas frecuentes del sitio están marcadas con schema.org FAQPage
+en las tres versiones de idioma, e incluyen: qué es RegulatorIA, cuánto tarda un
+registro, en qué países opera, si la IA reemplaza al experto, qué normativas
+soporta, cómo se protege la confidencialidad, si se puede reutilizar un dossier
+aprobado en otro país, qué ocurre si la empresa no tiene área regulatoria, y
+cómo empezar.
+
+## Servicio gestionado
+
+Para startups agrotech y biotech sin equipo regulatorio propio existe una
+modalidad llave en mano: un equipo de expertos senior, apoyado por la
+plataforma, se hace cargo del registro completo.
+
+## Uso de este contenido
+
+El contenido de gruporegulatorio.cl puede citarse y resumirse indicando la
+fuente. Para consultas comerciales o técnicas: info@gruporegulatorio.cl.
