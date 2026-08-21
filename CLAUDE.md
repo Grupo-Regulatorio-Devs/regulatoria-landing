@@ -71,10 +71,13 @@ When you add new text to `saas.html`:
 
 ## Other files
 
-- `contacto.php` — demo-form receiver. Emails the lead, backs it up to
-  `leads/leads.csv`, replies JSON. Its `$_POST` field names (`nombre`, `cargo`,
-  `empresa`, `email`, `website`) are the wire contract with the form in
-  `main.js` — keep them in sync.
+- `contacto.php` — demo-form receiver, **currently dormant**. Amplify serves the
+  site as static files and does not execute PHP, so `amplify.yml` keeps this file
+  out of the published artifact (served statically it would leak its own source)
+  and the form in `main.js` opens a `mailto:` to info@gruporegulatorio.cl
+  instead of posting here. Its `$_POST` field names (`nombre`, `cargo`,
+  `empresa`, `email`, `website`) still match what the form collects, so the file
+  works as-is the day the site moves back to a host with PHP.
 - `agentes/*.webp` — the 11 agent icons. **This folder must not be renamed
   `icons/`:** Apache reserves `/icons/` as its own alias, so files there return
   404 even when uploaded correctly. Verified in production.
@@ -84,7 +87,16 @@ When you add new text to `saas.html`:
 
 ## Deploy
 
-Static upload of the repository root — excluding `_fuente/` and `docs/` — to the
-hosting document root. The paths that ship are `index.html`, `en/index.html`,
-`pt/index.html`, `styles.css`, `main.js`, `contacto.php`, `agentes/`, and the SEO
-assets.
+AWS Amplify Hosting, app `regulatoria-landing` (`dw620j818cy6b`, region
+`sa-east-1`, account 382975714696), serving
+https://regulatoria.gruporegulatorio.cl. The app is connected to this repo:
+**every push to `main` deploys itself** — there is nothing to upload by hand.
+
+`amplify.yml` is the build spec. Nothing is compiled: `index.html`, `en/` and
+`pt/` are the committed output of `build_i18n.py`, so the build only copies the
+repo into `dist/` minus `_fuente/`, `docs/`, `contacto.php` and `CLAUDE.md`.
+Regenerate the pages locally and commit them — the build will not run
+`build_i18n.py` for you.
+
+The apex and `www` are a separate Amplify app (`gruporegulatorio-landing`,
+`d2liqgsvfy7ywo`) whose only job is a 301 to `regulatoria.gruporegulatorio.cl`.

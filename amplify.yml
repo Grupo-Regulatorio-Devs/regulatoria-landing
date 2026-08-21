@@ -1,0 +1,25 @@
+# Amplify Hosting build spec.
+#
+# El sitio es estatico y ya viene generado en el repo: index.html, en/ y pt/ son
+# la salida de _fuente/build/build_i18n.py, commiteada. Aca no se construye
+# nada, solo se selecciona que se publica.
+#
+# Queda fuera del artefacto:
+#   _fuente/, docs/   fuentes y specs, no son parte del sitio
+#   contacto.php      Amplify no ejecuta PHP; servido estatico expondria su
+#                     codigo. Se conserva en el repo para un host con PHP.
+#   CLAUDE.md         documentacion interna
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - mkdir -p dist
+        - tar -cf - --exclude=./dist --exclude=./.git --exclude=./_fuente --exclude=./docs --exclude=./contacto.php --exclude=./CLAUDE.md --exclude=./amplify.yml --exclude=./.gitignore . | tar -xf - -C dist
+        - echo "Artefacto:" && find dist -type f | sort
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths: []

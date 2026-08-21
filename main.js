@@ -158,7 +158,11 @@ for(var pi=0;pi<40;pi++)particles.push({x:Math.random()*W,y:Math.random()*H,vx:(
 function drawParticles(){ctx.clearRect(0,0,W,H);particles.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;var dx=mouse.x-p.x,dy=mouse.y-p.y,dist=Math.sqrt(dx*dx+dy*dy);var glow=dist<200?(.1*(1-dist/200)):0;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle='rgba(90,173,45,'+(p.o+glow)+')';ctx.fill();if(dist<120){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(mouse.x,mouse.y);ctx.strokeStyle='rgba(90,173,45,'+(0.03*(1-dist/120))+')';ctx.stroke()}});requestAnimationFrame(drawParticles)}
 drawParticles();
 
-/* ── Demo form ── */
+/* ── Demo form ──
+   Amplify sirve el sitio estatico y no ejecuta PHP, asi que el envio abre el
+   cliente de correo del visitante en vez de postear a contacto.php. Los campos
+   siguen siendo los mismos que espera contacto.php si algun dia vuelve a haber
+   un backend. */
 document.getElementById('contactForm').addEventListener('submit',function(e){
   e.preventDefault();
   var btn=document.getElementById('submitBtn');
@@ -169,25 +173,16 @@ document.getElementById('contactForm').addEventListener('submit',function(e){
   var hp=(document.getElementById('website')||{}).value||'';
   if(!n||!em||!co||!ro)return;
   btn.textContent='Enviando...';btn.disabled=true;
-  var data=new FormData();
-  data.append('nombre',n);data.append('cargo',ro);data.append('empresa',co);data.append('email',em);data.append('website',hp);
-  fetch('contacto.php',{method:'POST',body:data})
-    .then(function(r){return r.json().catch(function(){return {ok:r.ok};});})
-    .then(function(res){
-      if(res&&res.ok){
-        document.getElementById('formOk').style.display='block';
-        document.getElementById('contactForm').reset();
-        btn.textContent='✓ Enviado';
-        btn.style.background='linear-gradient(135deg,#065F46,#059669)';
-      }else{
-        btn.textContent='Reintentar';btn.disabled=false;
-        alert('No pudimos enviar tu solicitud. Escríbenos directamente a info@gruporegulatorio.cl');
-      }
-    })
-    .catch(function(){
-      btn.textContent='Reintentar';btn.disabled=false;
-      alert('Error de conexión. Escríbenos directamente a info@gruporegulatorio.cl');
-    });
+  /* honeypot lleno = bot: mostramos exito pero no abrimos nada */
+  if(!hp){
+    var subj=encodeURIComponent('[RegulatorIA] Solicitud de demo - '+co);
+    var body=encodeURIComponent('Nombre: '+n+'\nCargo: '+ro+'\nEmpresa: '+co+'\nEmail: '+em);
+    window.location.href='mailto:info@gruporegulatorio.cl?subject='+subj+'&body='+body;
+  }
+  document.getElementById('formOk').style.display='block';
+  document.getElementById('contactForm').reset();
+  btn.textContent='✓ Enviado';
+  btn.style.background='linear-gradient(135deg,#065F46,#059669)';
 });
 
 /* ══════════════════════════════════════════
