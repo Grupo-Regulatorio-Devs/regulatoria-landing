@@ -318,9 +318,9 @@ T = {
  "We'll contact you within 48 business hours. No commitment.",
  "Entramos em contato em menos de 48 horas úteis. Sem compromisso."),
 "📅 Agendar demo en el calendario": ("📅 Book a demo in the calendar", "📅 Agendar demo no calendário"),
-"✓ ¡Solicitud enviada! Nos comunicaremos pronto para coordinar tu demo.": (
- "✓ Request sent! We'll be in touch shortly to arrange your demo.",
- "✓ Solicitação enviada! Entraremos em contato em breve para agendar sua demo."),
+"✓ Abrimos tu correo con la solicitud lista. Envíala y te contactamos para coordinar la demo.": (
+ "✓ We opened your email client with the request ready. Send it and we'll contact you to arrange the demo.",
+ "✓ Abrimos seu e-mail com a solicitação pronta. Envie-a e entraremos em contato para agendar a demo."),
 "© 2026 Grupo Regulatorio SpA · info@gruporegulatorio.cl · +56 9 8144 0854": (
  "© 2026 Grupo Regulatorio SpA · info@gruporegulatorio.cl · +56 9 8144 0854",
  "© 2026 Grupo Regulatorio SpA · info@gruporegulatorio.cl · +56 9 8144 0854"),

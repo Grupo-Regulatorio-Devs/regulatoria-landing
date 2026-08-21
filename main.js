@@ -13,6 +13,37 @@ setTimeout(function(){
 }, 2500);
 
 
+/* El formulario se registra ANTES del guard de GSAP a proposito: vivia
+   dentro del else y si el CDN de GSAP quedaba bloqueado el handler no se
+   registraba nunca. Como el <form> no tiene action, el navegador hacia un
+   submit nativo y el lead se perdia en silencio. No depende de GSAP. */
+/* ── Demo form ──
+   Amplify sirve el sitio estatico y no ejecuta PHP, asi que el envio abre el
+   cliente de correo del visitante en vez de postear a contacto.php. Los campos
+   siguen siendo los mismos que espera contacto.php si algun dia vuelve a haber
+   un backend. */
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var btn=document.getElementById('submitBtn');
+  var n=document.getElementById('fname').value.trim();
+  var em=document.getElementById('email').value.trim();
+  var co=document.getElementById('company').value.trim();
+  var ro=document.getElementById('role').value.trim();
+  var hp=(document.getElementById('website')||{}).value||'';
+  if(!n||!em||!co||!ro)return;
+  btn.textContent='Abriendo tu correo...';btn.disabled=true;
+  /* honeypot lleno = bot: mostramos exito pero no abrimos nada */
+  if(!hp){
+    var subj=encodeURIComponent('[RegulatorIA] Solicitud de demo - '+co);
+    var body=encodeURIComponent('Nombre: '+n+'\nCargo: '+ro+'\nEmpresa: '+co+'\nEmail: '+em);
+    window.location.href='mailto:info@gruporegulatorio.cl?subject='+subj+'&body='+body;
+  }
+  document.getElementById('formOk').style.display='block';
+  document.getElementById('contactForm').reset();
+  btn.textContent='✓ Listo';
+  btn.style.background='linear-gradient(135deg,#065F46,#059669)';
+});
+
 if (typeof gsap === 'undefined') {
   /* GSAP not available — nothing else to do; the safety net above handles visibility. */
 } else {
@@ -157,33 +188,6 @@ document.addEventListener('mousemove',function(e){mouse.x=e.clientX;mouse.y=e.cl
 for(var pi=0;pi<40;pi++)particles.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.2,vy:(Math.random()-.5)*.2,r:Math.random()*2+.5,o:Math.random()*.15+.05});
 function drawParticles(){ctx.clearRect(0,0,W,H);particles.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;var dx=mouse.x-p.x,dy=mouse.y-p.y,dist=Math.sqrt(dx*dx+dy*dy);var glow=dist<200?(.1*(1-dist/200)):0;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle='rgba(90,173,45,'+(p.o+glow)+')';ctx.fill();if(dist<120){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(mouse.x,mouse.y);ctx.strokeStyle='rgba(90,173,45,'+(0.03*(1-dist/120))+')';ctx.stroke()}});requestAnimationFrame(drawParticles)}
 drawParticles();
-
-/* ── Demo form ──
-   Amplify sirve el sitio estatico y no ejecuta PHP, asi que el envio abre el
-   cliente de correo del visitante en vez de postear a contacto.php. Los campos
-   siguen siendo los mismos que espera contacto.php si algun dia vuelve a haber
-   un backend. */
-document.getElementById('contactForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  var btn=document.getElementById('submitBtn');
-  var n=document.getElementById('fname').value.trim();
-  var em=document.getElementById('email').value.trim();
-  var co=document.getElementById('company').value.trim();
-  var ro=document.getElementById('role').value.trim();
-  var hp=(document.getElementById('website')||{}).value||'';
-  if(!n||!em||!co||!ro)return;
-  btn.textContent='Enviando...';btn.disabled=true;
-  /* honeypot lleno = bot: mostramos exito pero no abrimos nada */
-  if(!hp){
-    var subj=encodeURIComponent('[RegulatorIA] Solicitud de demo - '+co);
-    var body=encodeURIComponent('Nombre: '+n+'\nCargo: '+ro+'\nEmpresa: '+co+'\nEmail: '+em);
-    window.location.href='mailto:info@gruporegulatorio.cl?subject='+subj+'&body='+body;
-  }
-  document.getElementById('formOk').style.display='block';
-  document.getElementById('contactForm').reset();
-  btn.textContent='✓ Enviado';
-  btn.style.background='linear-gradient(135deg,#065F46,#059669)';
-});
 
 /* ══════════════════════════════════════════
    GSAP ANIMATIONS
