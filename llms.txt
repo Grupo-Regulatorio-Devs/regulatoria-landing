@@ -62,11 +62,11 @@ comparte con terceros.
 
 ## Páginas
 
-- [Inicio (español)](https://www.gruporegulatorio.cl/): descripción completa de
+- [Inicio (español)](https://regulatoria.gruporegulatorio.cl/): descripción completa de
   la plataforma, los agentes, el modelo HITL, seguridad, cobertura y preguntas
   frecuentes.
-- [Home (English)](https://www.gruporegulatorio.cl/en/): same content in English.
-- [Início (Português)](https://www.gruporegulatorio.cl/pt/): mesmo conteúdo em
+- [Home (English)](https://regulatoria.gruporegulatorio.cl/en/): same content in English.
+- [Início (Português)](https://regulatoria.gruporegulatorio.cl/pt/): mesmo conteúdo em
   português.
 
 ## Preguntas frecuentes

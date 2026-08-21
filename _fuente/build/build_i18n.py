@@ -19,7 +19,7 @@ from dict_i18n import T
 # Repo root is two levels above this build/ directory (_fuente/build/ -> repo).
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SRC = os.path.join(ROOT, '_fuente', 'saas.html')
-BASE = 'https://www.gruporegulatorio.cl/'
+BASE = 'https://regulatoria.gruporegulatorio.cl/'
 
 LANGS = {
     # `short` shows in the nav (the full names were 266px wide and wrapped the

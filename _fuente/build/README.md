@@ -14,9 +14,9 @@ Produce:
 
 | Archivo         | Idioma     | URL publicada                        |
 |-----------------|------------|--------------------------------------|
-| `index.html`    | Español    | https://www.gruporegulatorio.cl/     |
-| `en/index.html` | English    | https://www.gruporegulatorio.cl/en/  |
-| `pt/index.html` | Português  | https://www.gruporegulatorio.cl/pt/  |
+| `index.html`    | Español    | https://regulatoria.gruporegulatorio.cl/     |
+| `en/index.html` | English    | https://regulatoria.gruporegulatorio.cl/en/  |
+| `pt/index.html` | Português  | https://regulatoria.gruporegulatorio.cl/pt/  |
 
 Cada una lleva su `canonical`, los cuatro `hreflang` recíprocos (es / en / pt-BR
 / x-default), `og:locale` y el JSON-LD traducido e `inLanguage` correcto.

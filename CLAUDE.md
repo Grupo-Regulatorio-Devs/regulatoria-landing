@@ -27,9 +27,9 @@ styles.css          all CSS, shared by the three languages (linked as /styles.cs
 main.js             all behavior, shared (linked as /main.js, deferred)
         │
         ▼  python3 _fuente/build/build_i18n.py
-index.html          Spanish   (root)      https://www.gruporegulatorio.cl/
-en/index.html       English                https://www.gruporegulatorio.cl/en/
-pt/index.html       Português              https://www.gruporegulatorio.cl/pt/
+index.html          Spanish   (root)      https://regulatoria.gruporegulatorio.cl/
+en/index.html       English                https://regulatoria.gruporegulatorio.cl/en/
+pt/index.html       Português              https://regulatoria.gruporegulatorio.cl/pt/
 ```
 
 - **CSS and JS are external and language-agnostic.** They are the same file for

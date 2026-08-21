@@ -22,4 +22,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://www.gruporegulatorio.cl/sitemap.xml
+Sitemap: https://regulatoria.gruporegulatorio.cl/sitemap.xml
