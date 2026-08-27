@@ -6,6 +6,7 @@ import {
   LAUNCH_DURATION,
   launchSchema,
 } from "./components/launch/LaunchVideo";
+import { PromoV2, PROMO_V2_DURATION, promoV2Schema } from "./components/v2/PromoV2";
 import { promoSchema, type PromoProps } from "./types";
 import { FORMATS } from "./themes/brands";
 
@@ -78,6 +79,21 @@ const regulatoriaLaunchLight: PromoProps = {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* v2 — same brand system, rebuilt cold open and gauge-based metrics. */}
+      <Composition
+        id="PromoV2"
+        component={PromoV2}
+        schema={promoV2Schema}
+        defaultProps={{ format: "horizontal" as const }}
+        fps={30}
+        durationInFrames={PROMO_V2_DURATION}
+        width={FORMATS.horizontal.width}
+        height={FORMATS.horizontal.height}
+        calculateMetadata={({ props }) => {
+          const { width, height } = FORMATS[props.format ?? "horizontal"];
+          return { durationInFrames: PROMO_V2_DURATION, width, height };
+        }}
+      />
       {/* The brand-system launch film — alternates dark brand ground with light
           product ground, per the Guía de Marca surface rules. */}
       <Composition
