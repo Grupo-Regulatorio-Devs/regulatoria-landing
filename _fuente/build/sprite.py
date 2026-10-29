@@ -88,6 +88,29 @@ ICONS.append(sym('guard',
      '<path d="M18.5 40.2h11a5.5 5.5 0 0 1-11 0Z" fill="{F}"/>'],
     '<path d="M17.6 21.8A6.6 6.6 0 0 1 24 15.2" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".88"/>'))
 
+# RADAR — radar screen with sweep (market surveillance)
+ICONS.append(sym('radar',
+    ['<circle cx="24" cy="24" r="18" fill="{F}"/>'],
+    '<circle cx="24" cy="24" r="11.6" fill="none" stroke="#fff" stroke-width="2.4" opacity=".55"/>'
+    '<circle cx="24" cy="24" r="5.4" fill="none" stroke="#fff" stroke-width="2.4" opacity=".55"/>'
+    '<path d="M24 24 35.6 14.2" stroke="#fff" stroke-width="3.3" stroke-linecap="round" opacity=".94"/>'
+    '<circle cx="30.4" cy="27.8" r="2.5" fill="#fff" opacity=".94"/>'))
+
+# READER — camera reading a label (market surveillance)
+ICONS.append(sym('reader',
+    ['<path d="M17.6 8.6h12.8a3 3 0 0 1 2.6 1.5l1.8 3.1H13.2l1.8-3.1a3 3 0 0 1 2.6-1.5Z" fill="{F}"/>',
+     '<rect x="4" y="12.4" width="40" height="28" rx="6" fill="{F}"/>'],
+    '<circle cx="24" cy="26.4" r="9.4" fill="#fff" opacity=".92"/>'
+    '<circle cx="24" cy="26.4" r="4.4" fill="currentColor" opacity=".5"/>'
+    '<circle cx="37" cy="18.6" r="1.9" fill="#fff" opacity=".8"/>'))
+
+# ATLAS — folded map with a pin (market surveillance)
+ICONS.append(sym('atlas',
+    ['<path d="M4 11.4 17 6.4l14 5 13-5v30.2l-13 5-14-5-13 5Z" fill="{F}"/>'],
+    '<path d="M17 6.4v30.2M31 11.4v30.2" stroke="#0F1A0A" stroke-width="1.6" opacity=".16"/>'
+    '<path d="M24 34.2s-7-7.2-7-12.2a7 7 0 0 1 14 0c0 5-7 12.2-7 12.2Z" fill="#fff" opacity=".94"/>'
+    '<circle cx="24" cy="22" r="2.7" fill="currentColor" opacity=".55"/>'))
+
 # ORCHESTRATOR — hub / central node
 ICONS.append(sym('orq',
     ['<path d="M24 11.4v5.2M35.2 17.8l-4.5 2.6M35.2 30.2l-4.5-2.6M24 36.6v-5.2M12.8 30.2l4.5-2.6M12.8 17.8l4.5 2.6" stroke="{F}" stroke-width="2.7" stroke-linecap="round"/>',

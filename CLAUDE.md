@@ -7,9 +7,15 @@ read the whole repo — this file only points you at the moving parts.
 
 The public marketing site for **RegulatorIA** (Grupo Regulatorio SpA), an
 AI-native platform that automates the registration of agrochemicals and
-pesticides before LATAM regulatory authorities. The product is a suite of 10
+pesticides before LATAM regulatory authorities. The product is a suite of 13
 specialized AI agents plus an orchestrator, with mandatory human-in-the-loop
-(HITL) expert validation.
+(HITL) expert validation, split into two use cases: **registration** (10 agents
+across three phases: pre-registration, registration, post-registration) and
+**market surveillance** of the illegal trade (RADAR, READER, ATLAS, aimed at
+industry associations and brands). The landing presents them as one ecosystem:
+every place that lists the agents (hero orbit, `#fases`, the dashboard preview)
+includes both groups; market surveillance has its own phase color (rose,
+`--phase-vig`).
 
 It is a static, trilingual (ES / EN / PT) landing served from standard hosting
 (historically Ferozo; the site also lives behind AWS/CloudFront). Brand palette
@@ -78,7 +84,7 @@ When you add new text to `saas.html`:
   instead of posting here. Its `$_POST` field names (`nombre`, `cargo`,
   `empresa`, `email`, `website`) still match what the form collects, so the file
   works as-is the day the site moves back to a host with PHP.
-- `agentes/*.webp` — the 11 agent icons. **This folder must not be renamed
+- `agentes/*.webp` — the 14 agent icons (13 agents + orchestrator; Fluent Emoji 3D style, 81×81). **This folder must not be renamed
   `icons/`:** Apache reserves `/icons/` as its own alias, so files there return
   404 even when uploaded correctly. Verified in production.
 - `blog/` — SEO articles (not linked from the landing nav).

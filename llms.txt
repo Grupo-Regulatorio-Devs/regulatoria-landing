@@ -1,10 +1,11 @@
 # RegulatorIA — Grupo Regulatorio SpA
 
 > Plataforma AI-native para el registro de agroquímicos y plaguicidas ante las
-> autoridades regulatorias de América Latina. Diez agentes de inteligencia
-> artificial especializados cubren el ciclo completo del registro, y cada
-> entregable pasa por la validación obligatoria de un experto regulatorio humano
-> antes de presentarse ante una autoridad.
+> autoridades regulatorias de América Latina, y para la vigilancia del comercio
+> ilegal de agroquímicos. Trece agentes de inteligencia artificial
+> especializados cubren dos casos de uso —el ciclo completo del registro y la
+> vigilancia de mercado—, y cada entregable pasa por la validación obligatoria
+> de un experto humano antes de convertirse en acción.
 
 Empresa: Grupo Regulatorio SpA (Chile)
 Contacto: info@gruporegulatorio.cl · +56 9 8144 0854
@@ -19,7 +20,9 @@ generación de fichas de seguridad y etiquetas, adaptación multipaís y vigilan
 de vencimientos. Reduce hasta en un 80% el tiempo de esa etapa. Los plazos de
 evaluación propios de cada autoridad no cambian, porque dependen del organismo.
 
-## Los diez agentes
+## Los trece agentes
+
+### Registro de productos (diez agentes, tres fases)
 
 - COMPASS — estrategia regulatoria: define la vía y los requisitos por país.
 - PREDICT — toxicología in silico: modelamiento QSAR y read-across.
@@ -31,6 +34,21 @@ evaluación propios de cada autoridad no cambian, porque dependen del organismo.
 - SCRIBE — fichas de datos de seguridad y etiquetas GHS/CLP.
 - BRIDGE — armonización de dossiers entre países.
 - GUARD — vigilancia de vencimientos y renovaciones.
+
+### Vigilancia de mercado · comercio ilegal (tres agentes, para gremios y marcas)
+
+- RADAR — monitorea marketplaces, redes sociales y grupos de mensajería y
+  detecta anuncios de riesgo: vendedores sin habilitación, marcas no
+  registradas y precios fuera de mercado.
+- READER — verifica la etiqueta de cada producto publicado contra el registro
+  oficial del país; cualquier persona puede subir la foto de una etiqueta para
+  saber si el producto es real o falsificado.
+- ATLAS — construye el mapa del comercio ilegal por canal, marca y región para
+  dirigir la fiscalización.
+
+Cada caso detectado se entrega como expediente con evidencia estructurada,
+listo para denuncia ante la autoridad. El programa parte con un piloto de 3 a 6
+meses con KPIs definidos de antemano.
 
 ## Modelo HITL (Human-in-the-Loop)
 

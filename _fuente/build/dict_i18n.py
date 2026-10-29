@@ -14,9 +14,9 @@ Localization notes:
 T = {
 
 # ══════════════════════════ FAQ — answers ══════════════════════════
-"RegulatorIA es una plataforma AI-native que automatiza el registro de agroquímicos y plaguicidas ante las autoridades regulatorias de LATAM. Combina 10 agentes de inteligencia artificial especializados —que cubren desde la estrategia regulatoria y la toxicología in silico hasta el armado del dossier y la vigilancia post-registro— con validación obligatoria de expertos regulatorios humanos antes de cada entrega.": (
- "RegulatorIA is an AI-native platform that automates the registration of agrochemicals and pesticides with LATAM regulatory authorities. It combines 10 specialised artificial intelligence agents —covering everything from regulatory strategy and in silico toxicology to dossier assembly and post-registration monitoring— with mandatory validation by human regulatory experts before every delivery.",
- "A RegulatorIA é uma plataforma AI-native que automatiza o registro de agroquímicos e agrotóxicos junto às autoridades regulatórias da América Latina. Combina 10 agentes de inteligência artificial especializados —que cobrem desde a estratégia regulatória e a toxicologia in silico até a montagem do dossiê e a vigilância pós-registro— com validação obrigatória de especialistas regulatórios humanos antes de cada entrega."),
+"RegulatorIA es una plataforma AI-native que automatiza el registro de agroquímicos y plaguicidas ante las autoridades regulatorias de LATAM. Combina 13 agentes de inteligencia artificial especializados —que cubren desde la estrategia regulatoria y la toxicología in silico hasta el armado del dossier, la vigilancia post-registro y la detección del comercio ilegal— con validación obligatoria de expertos regulatorios humanos antes de cada entrega.": (
+ "RegulatorIA is an AI-native platform that automates the registration of agrochemicals and pesticides with LATAM regulatory authorities. It combines 13 specialised artificial intelligence agents —covering everything from regulatory strategy and in silico toxicology to dossier assembly, post-registration monitoring and illegal-trade detection— with mandatory validation by human regulatory experts before every delivery.",
+ "A RegulatorIA é uma plataforma AI-native que automatiza o registro de agroquímicos e agrotóxicos junto às autoridades regulatórias da América Latina. Combina 13 agentes de inteligência artificial especializados —que cobrem desde a estratégia regulatória e a toxicologia in silico até a montagem do dossiê, a vigilância pós-registro e a detecção do comércio ilegal— com validação obrigatória de especialistas regulatórios humanos antes de cada entrega."),
 
 "Una parte importante del plazo de un registro se va en preparar, revisar y corregir el expediente. RegulatorIA reduce hasta en un 80% los tiempos de esa etapa documental y de análisis: el armado del dossier, la revisión GLP/OECD y las respuestas a observaciones pasan de semanas a días. Los plazos de evaluación propios de cada autoridad no cambian, porque dependen del organismo.": (
  "A significant part of a registration timeline goes into preparing, reviewing and correcting the file. RegulatorIA cuts up to 80% of the time spent on that documentation and analysis stage: dossier assembly, GLP/OECD review and responses to objections go from weeks to days. Each authority's own evaluation timelines do not change, since they depend on the agency.",
@@ -65,9 +65,9 @@ T = {
 "El software que": ("The software that", "O software que"),
 "automatiza tu registro": ("automates your registration", "automatiza o seu registro"),
 "de agroquímicos.": ("of agrochemicals.", "de agroquímicos."),
-"10 agentes de IA especializados gestionan el ciclo completo de registro de plaguicidas. Validados por expertos regulatorios (HITL) y protegidos con seguridad enterprise.": (
- "10 specialised AI agents manage the full pesticide registration cycle. Validated by regulatory experts (HITL) and protected with enterprise-grade security.",
- "10 agentes de IA especializados gerenciam o ciclo completo de registro de agrotóxicos. Validados por especialistas regulatórios (HITL) e protegidos com segurança enterprise."),
+"13 agentes de IA especializados gestionan el ciclo completo de registro de plaguicidas y vigilan el comercio ilegal. Validados por expertos regulatorios (HITL) y protegidos con seguridad enterprise.": (
+ "13 specialised AI agents manage the full pesticide registration cycle and monitor the illegal trade. Validated by regulatory experts (HITL) and protected with enterprise-grade security.",
+ "13 agentes de IA especializados gerenciam o ciclo completo de registro de agrotóxicos e monitoram o comércio ilegal. Validados por especialistas regulatórios (HITL) e protegidos com segurança enterprise."),
 "Plataforma AI-Native · Chile y LATAM": ("AI-Native Platform · Chile & LATAM", "Plataforma AI-Native · Chile e América Latina"),
 "Obtén tu Demo Gratis →": ("Get your Free Demo →", "Solicite sua Demo Gratuita →"),
 "Solicitar Demo Gratis →": ("Request Free Demo →", "Solicitar Demo Gratuita →"),
@@ -113,11 +113,16 @@ T = {
 "ORQUESTADOR": ("ORCHESTRATOR", "ORQUESTRADOR"),
 
 # ══════════════════════════ Phases ══════════════════════════
-"Proceso en la plataforma": ("Process on the platform", "Processo na plataforma"),
-"Tres fases. Cero fricción.": ("Three phases. Zero friction.", "Três fases. Zero atrito."),
-"Desde la evaluación inicial hasta el monitoreo post-registro, la plataforma gestiona cada fase con agentes dedicados.": (
- "From initial assessment to post-registration monitoring, the platform handles every phase with dedicated agents.",
- "Da avaliação inicial ao monitoramento pós-registro, a plataforma conduz cada fase com agentes dedicados."),
+"Ecosistema de 13 agentes": ("An ecosystem of 13 agents", "Ecossistema de 13 agentes"),
+"Un ecosistema. Dos casos de uso.": ("One ecosystem. Two use cases.", "Um ecossistema. Dois casos de uso."),
+"Diez agentes llevan tu registro de punta a punta, en tres fases. Otros tres vigilan el mercado para que el producto registrado no compita con el ilegal.": (
+ "Ten agents take your registration end to end, in three phases. Three more watch the market so that registered products don't have to compete with illegal ones.",
+ "Dez agentes conduzem o seu registro de ponta a ponta, em três fases. Outros três vigiam o mercado para que o produto registrado não concorra com o ilegal."),
+"Caso de uso · Registro de productos": ("Use case · Product registration", "Caso de uso · Registro de produtos"),
+"Caso de uso · Vigilancia de mercado": ("Use case · Market surveillance", "Caso de uso · Vigilância de mercado"),
+"Gremios y marcas · Comercio ilegal": ("Industry associations and brands · Illegal trade", "Associações e marcas · Comércio ilegal"),
+"Detección, verificación y mapa": ("Detection, verification and mapping", "Detecção, verificação e mapa"),
+"Ver el programa →": ("See the program →", "Ver o programa →"),
 "Fase I · Pre-Registro": ("Phase I · Pre-Registration", "Fase I · Pré-Registro"),
 "Fase II · Registro": ("Phase II · Registration", "Fase II · Registro"),
 "Fase III · Post-Registro": ("Phase III · Post-Registration", "Fase III · Pós-Registro"),
@@ -201,6 +206,125 @@ T = {
 "🌎 Nuevo mercado LATAM": ("🌎 New LATAM market", "🌎 Novo mercado na América Latina"),
 "💬 Agenda una llamada": ("💬 Book a call", "💬 Agende uma ligação"),
 
+# ══════════════════════════ Dashboard · market surveillance ══════════════════════════
+"RADAR · Alertas de marketplaces y redes": ("RADAR · Marketplace and social media alerts", "RADAR · Alertas de marketplaces e redes"),
+"READER · Verificación de etiquetas": ("READER · Label verification", "READER · Verificação de rótulos"),
+"ATLAS · Puntos calientes del comercio ilegal": ("ATLAS · Illegal-trade hotspots", "ATLAS · Pontos críticos do comércio ilegal"),
+"Contra el registro oficial": ("Against the official register", "Contra o registro oficial"),
+"Por canal, marca y región": ("By channel, brand and region", "Por canal, marca e região"),
+"Publicaciones hoy": ("Listings today", "Publicações hoje"),
+"analizadas": ("analysed", "analisadas"),
+"Alertas nuevas": ("New alerts", "Novos alertas"),
+"últimas 24 h": ("last 24 h", "últimas 24 h"),
+"con READER": ("with READER", "com READER"),
+"Dadas de baja": ("Taken down", "Removidas"),
+"Etiquetas verificadas": ("Labels verified", "Rótulos verificados"),
+"Coinciden": ("Match", "Coincidem"),
+"con el registro": ("the register", "com o registro"),
+"Sospechosas": ("Suspicious", "Suspeitos"),
+"en revisión": ("under review", "em revisão"),
+"Falsificadas": ("Counterfeit", "Falsificados"),
+"confirmadas": ("confirmed", "confirmados"),
+"Señales mapeadas": ("Signals mapped", "Sinais mapeados"),
+"últimos 90 días": ("last 90 days", "últimos 90 dias"),
+"Zonas calientes": ("Hotspots", "Zonas críticas"),
+"priorizadas": ("prioritised", "priorizadas"),
+"Denuncias": ("Reports", "Denúncias"),
+"integradas": ("integrated", "integradas"),
+"Fiscalizaciones": ("Inspections", "Fiscalizações"),
+"dirigidas": ("targeted", "direcionadas"),
+"Publicación": ("Listing", "Publicação"),
+"Canal": ("Channel", "Canal"),
+"Riesgo": ("Risk", "Risco"),
+"Origen": ("Source", "Origem"),
+"Resultado": ("Result", "Resultado"),
+"Zona": ("Area", "Zona"),
+"Canal dominante": ("Main channel", "Canal predominante"),
+"Prioridad": ("Priority", "Prioridade"),
+"Tendencia 90 d": ("90-day trend", "Tendência 90 d"),
+"Glifomax 480 SL · 20 L": ("Glifomax 480 SL · 20 L", "Glifomax 480 SL · 20 L"),
+"CuproFort 25 WP · fraccionado": ("CuproFort 25 WP · repackaged", "CuproFort 25 WP · fracionado"),
+"Precio 45% bajo referencia": ("Price 45% below reference", "Preço 45% abaixo da referência"),
+"Vendedor sin habilitación": ("Unlicensed seller", "Vendedor sem habilitação"),
+"Envase no original": ("Non-original packaging", "Embalagem não original"),
+"Marca no registrada en el país": ("Brand not registered in the country", "Marca não registrada no país"),
+"Coincide con el registro": ("Matches the register", "Coincide com o registro"),
+"Registro no coincide": ("Registration doesn't match", "Registro não coincide"),
+"Concentración distinta": ("Different concentration", "Concentração diferente"),
+"Lote vencido": ("Expired batch", "Lote vencido"),
+"Marketplace": ("Marketplace", "Marketplace"),
+"Red social": ("Social media", "Rede social"),
+"Mensajería": ("Messaging", "Mensagens"),
+"Punto de venta": ("Point of sale", "Ponto de venda"),
+"En verificación": ("Verifying", "Em verificação"),
+"Nueva": ("New", "Novo"),
+"Compra controlada": ("Test purchase", "Compra controlada"),
+"Baja solicitada": ("Takedown requested", "Remoção solicitada"),
+"Descartada": ("Dismissed", "Descartado"),
+"Alerta RADAR": ("RADAR alert", "Alerta RADAR"),
+"Foto de agricultor": ("Farmer's photo", "Foto de agricultor"),
+"Foto de distribuidor": ("Distributor's photo", "Foto de distribuidor"),
+"Falsificada": ("Counterfeit", "Falsificado"),
+"Sospechosa": ("Suspicious", "Suspeito"),
+"Vencida": ("Expired", "Vencido"),
+"Genuina": ("Genuine", "Original"),
+"Corredor fronterizo norte": ("Northern border corridor", "Corredor de fronteira norte"),
+"Valle central": ("Central valley", "Vale central"),
+"Zona costera sur": ("Southern coastal area", "Zona costeira sul"),
+"Región andina": ("Andean region", "Região andina"),
+"48 señales": ("48 signals", "48 sinais"),
+"35 señales": ("35 signals", "35 sinais"),
+"22 señales": ("22 signals", "22 sinais"),
+"14 señales": ("14 signals", "14 sinais"),
+"8.412": ("8,412", "8.412"),
+"1.208": ("1,208", "1.208"),
+
+# ══════════════════════════ Illegal trade ══════════════════════════
+"Comercio ilegal": ("Illegal trade", "Comércio ilegal"),
+"El comercio ilegal de agroquímicos ya está en línea.": ("The illegal agrochemical trade is already online.", "O comércio ilegal de agroquímicos já está online."),
+"Nosotros también.": ("So are we.", "Nós também."),
+"Vigilancia con IA del comercio digital de agroquímicos, fertilizantes y bioestimulantes, que convierte lo detectado en evidencia lista para actuar.": (
+ "AI-powered surveillance of the online trade in agrochemicals, fertilisers and biostimulants, turning every finding into evidence ready for action.",
+ "Vigilância com IA do comércio digital de agroquímicos, fertilizantes e bioestimulantes, que transforma o que é detectado em evidência pronta para agir."),
+"Detecta": ("Detects", "Detecta"),
+"Verifica": ("Verifies", "Verifica"),
+"Mapea": ("Maps", "Mapeia"),
+"Vigila marketplaces, redes sociales y grupos de mensajería en tiempo real y detecta anuncios de riesgo: vendedores sin habilitación, marcas no registradas y precios fuera de mercado.": (
+ "Monitors marketplaces, social networks and messaging groups in real time and flags risky listings: unlicensed sellers, unregistered brands and off-market prices.",
+ "Monitora marketplaces, redes sociais e grupos de mensagens em tempo real e detecta anúncios de risco: vendedores sem habilitação, marcas não registradas e preços fora de mercado."),
+"Lee las etiquetas publicadas y verifica registro y composición contra el registro oficial de cada país (SENASA, SENAVE, SAG, ICA, entre otras). Cualquier persona puede subir la foto de una etiqueta para saber si el producto es real o falsificado.": (
+ "Reads the labels in each listing and checks registration and composition against each country's official register (SENASA, SENAVE, SAG, ICA, among others). Anyone can upload a photo of a label to find out whether the product is genuine or counterfeit.",
+ "Lê os rótulos publicados e verifica registro e composição contra o registro oficial de cada país (SENASA, SENAVE, SAG, ICA, entre outras). Qualquer pessoa pode enviar a foto de um rótulo para saber se o produto é original ou falsificado."),
+"Construye el mapa del comercio ilegal por canal, marca y región: dónde se concentra, cómo se mueve y dónde conviene fiscalizar primero.": (
+ "Builds the map of illegal trade by channel, brand and region: where it concentrates, how it moves and where enforcement should start.",
+ "Constrói o mapa do comércio ilegal por canal, marca e região: onde se concentra, como se movimenta e onde convém fiscalizar primeiro."),
+"De la detección a la acción": ("From detection to action", "Da detecção à ação"),
+"Cada caso se entrega como expediente con evidencia estructurada —capturas, enlace, vendedor, ubicación aproximada y nivel de riesgo— listo para denuncia ante la autoridad o acción de su equipo. Ninguna alerta se convierte en acción sin validación humana.": (
+ "Each case is delivered as a file with structured evidence —screenshots, link, seller, approximate location and risk level— ready to be reported to the authority or acted on by your team. No alert becomes action without human validation.",
+ "Cada caso é entregue como um dossiê com evidência estruturada —capturas de tela, link, vendedor, localização aproximada e nível de risco— pronto para denúncia à autoridade ou ação da sua equipe. Nenhum alerta vira ação sem validação humana."),
+"Referencia pública · Chile": ("Public benchmark · Chile", "Referência pública · Chile"),
+"Un sistema de IA multimodal aplicado al comercio electrónico ya detecta plaguicidas no autorizados que la fiscalización tradicional no alcanza a pesquisar a tiempo.": (
+ "A multimodal AI system applied to e-commerce is already detecting unauthorised pesticides that traditional enforcement cannot catch in time.",
+ "Um sistema de IA multimodal aplicado ao comércio eletrônico já detecta agrotóxicos não autorizados que a fiscalização tradicional não consegue identificar a tempo."),
+"Publicaciones analizadas": ("Listings analysed", "Publicações analisadas"),
+"Alertas priorizadas": ("Prioritised alerts", "Alertas priorizados"),
+"Publicaciones por hora": ("Listings per hour", "Publicações por hora"),
+"Revisión manual evitada": ("Manual review avoided", "Revisão manual evitada"),
+"+232.000": ("+232,000", "+232.000"),
+"4.634": ("4,634", "4.634"),
+"~10.000": ("~10,000", "~10.000"),
+"38.000 h": ("38,000 h", "38.000 h"),
+"Cifras reportadas públicamente (junio 2026). Como referencia sectorial, el mercado ilegal de fitosanitarios se estima en ~20% en Brasil (~USD 2.000 millones/año) y ~14% en Europa.": (
+ "Publicly reported figures (June 2026). As an industry benchmark, the illegal crop-protection market is estimated at ~20% in Brazil (~USD 2 billion/year) and ~14% in Europe.",
+ "Números divulgados publicamente (junho de 2026). Como referência setorial, o mercado ilegal de defensivos agrícolas é estimado em ~20% no Brasil (~USD 2 bilhões/ano) e ~14% na Europa."),
+"Piloto de 3 a 6 meses, con KPIs y criterios de éxito definidos de antemano.": (
+ "A 3- to 6-month pilot, with KPIs and success criteria agreed upfront.",
+ "Piloto de 3 a 6 meses, com KPIs e critérios de sucesso definidos previamente."),
+"Definimos juntos los canales a vigilar, las marcas participantes y la integración de sus denuncias existentes.": (
+ "Together we define the channels to monitor, the participating brands and how your existing reports are brought in.",
+ "Definimos juntos os canais a monitorar, as marcas participantes e a integração das suas denúncias existentes."),
+"Conversemos un piloto →": ("Let's talk about a pilot →", "Vamos conversar sobre um piloto →"),
+
 # ══════════════════════════ HITL ══════════════════════════
 "Human-in-the-Loop · HITL": ("Human-in-the-Loop · HITL", "Human-in-the-Loop · HITL"),
 "IA supervisada por expertos regulatorios.": ("AI supervised by regulatory experts.", "IA supervisionada por especialistas regulatórios."),
@@ -209,9 +333,9 @@ T = {
  "Não substituímos os especialistas: nós os potencializamos. Cada decisão crítica da IA é revisada e validada por um especialista regulatório certificado antes de chegar até você."),
 "Paso 1 · IA": ("Step 1 · AI", "Passo 1 · IA"),
 "La IA genera": ("The AI generates", "A IA gera"),
-"Los 10 agentes procesan tu producto: analizan la fórmula, predicen toxicidad, comprueban requisitos normativos y compilan el dossier técnico de forma automática.": (
- "The 10 agents process your product: they analyse the formulation, predict toxicity, check regulatory requirements and compile the technical dossier automatically.",
- "Os 10 agentes processam o seu produto: analisam a fórmula, predizem toxicidade, verificam requisitos normativos e compilam o dossiê técnico automaticamente."),
+"Los agentes de registro procesan tu producto: analizan la fórmula, predicen toxicidad, comprueban requisitos normativos y compilan el dossier técnico de forma automática.": (
+ "The registration agents process your product: they analyse the formulation, predict toxicity, check regulatory requirements and compile the technical dossier automatically.",
+ "Os agentes de registro processam o seu produto: analisam a fórmula, predizem toxicidade, verificam requisitos normativos e compilam o dossiê técnico automaticamente."),
 "Paso 2 · Experto": ("Step 2 · Expert", "Passo 2 · Especialista"),
 "El experto valida": ("The expert validates", "O especialista valida"),
 "Un especialista regulatorio certificado revisa los puntos críticos: estudios toxicológicos, datos de residuos, adecuación a requisitos GLP/OECD y coherencia del expediente.": (
@@ -399,12 +523,12 @@ T.update({
 "RegulatorIA — Registro de Agroquímicos AI-Native": (
  "RegulatorIA — AI-Native Agrochemical Registration",
  "RegulatorIA — Registro de Agroquímicos AI-Native"),
-"Plataforma AI-native para el registro de agroquímicos en Chile y LATAM. 10 agentes de IA, validación HITL por expertos y seguridad enterprise.": (
- "AI-native platform for agrochemical registration in Chile and LATAM. 10 AI agents, HITL expert validation and enterprise-grade security.",
- "Plataforma AI-native para o registro de agroquímicos no Chile e América Latina. 10 agentes de IA, validação HITL e segurança enterprise."),
-"RegulatorIA — 10 agentes de IA para el registro de agroquímicos en LATAM": (
- "RegulatorIA — 10 AI agents for agrochemical registration in LATAM",
- "RegulatorIA — 10 agentes de IA para o registro de agroquímicos na América Latina"),
+"Plataforma AI-native para el registro de agroquímicos y la vigilancia del comercio ilegal en Chile y LATAM. 13 agentes de IA, validación HITL por expertos y seguridad enterprise.": (
+ "AI-native platform for agrochemical registration and illegal-trade surveillance in Chile and LATAM. 13 AI agents, HITL expert validation and enterprise-grade security.",
+ "Plataforma AI-native para o registro de agroquímicos e a vigilância do comércio ilegal no Chile e América Latina. 13 agentes de IA, validação HITL e segurança enterprise."),
+"RegulatorIA — 13 agentes de IA para el registro de agroquímicos en LATAM": (
+ "RegulatorIA — 13 AI agents for agrochemical registration in LATAM",
+ "RegulatorIA — 13 agentes de IA para o registro de agroquímicos na América Latina"),
 
 # ══════════════════════════ Dashboard: table headers ══════════════════════════
 "COMPASS · Estrategia regulatoria por país": ("COMPASS · Regulatory strategy by country", "COMPASS · Estratégia regulatória por país"),
@@ -678,7 +802,7 @@ T.update({
 "regulatorias": ("regulatory", "regulatórias"),
 "Advertencia": ("Warning", "Advertência"),
 "Defensas IA": ("AI defences", "Defesas de IA"),
-"Agentes IA": ("AI agents", "Agentes de IA"),
+"Agentes de registro": ("Registration agents", "Agentes de registro"),
 "predicha": ("predicted", "predita"),
 "dossiers": ("dossiers", "dossiês"),
 "documentos": ("documents", "documentos"),
@@ -782,7 +906,26 @@ T.update({
 "El Globalizador": ("The Globalizer", "O Globalizador"),
 "El Centinela": ("The Sentinel", "O Sentinela"),
 "El Orquestador": ("The Orchestrator", "O Orquestrador"),
-"Los 10 agentes": ("All 10 agents", "Os 10 agentes"),
+"Los 13 agentes": ("All 13 agents", "Os 13 agentes"),
+"Vigilancia de mercado": ("Market surveillance", "Vigilância de mercado"),
+"El Vigía": ("The Watcher", "O Vigia"),
+"El Inspector": ("The Inspector", "O Inspetor"),
+"El Cartógrafo": ("The Cartographer", "O Cartógrafo"),
+"Rastrea marketplaces, redes sociales y grupos de mensajería en busca de oferta ilegal o falsificada.": (
+ "Tracks marketplaces, social networks and messaging groups for illegal or counterfeit offers.",
+ "Rastreia marketplaces, redes sociais e grupos de mensagens em busca de oferta ilegal ou falsificada."),
+"Verifica la etiqueta contra el registro oficial: basta una foto para saber si el producto es real.": (
+ "Checks the label against the official register: a single photo tells you whether the product is genuine.",
+ "Verifica o rótulo contra o registro oficial: basta uma foto para saber se o produto é original."),
+"Mapea el comercio ilegal por canal, marca y región para dirigir la fiscalización.": (
+ "Maps the illegal trade by channel, brand and region to target enforcement.",
+ "Mapeia o comércio ilegal por canal, marca e região para direcionar a fiscalização."),
+"Monitoreo en tiempo real": ("Real-time monitoring", "Monitoramento em tempo real"),
+"Verificación por foto": ("Photo verification", "Verificação por foto"),
+"Mapa de puntos calientes": ("Hotspot map", "Mapa de pontos críticos"),
+"Marketplaces y redes": ("Marketplaces & social", "Marketplaces e redes"),
+"Verificación de etiquetas": ("Label verification", "Verificação de rótulos"),
+"Mapa del comercio ilegal": ("Illegal-trade map", "Mapa do comércio ilegal"),
 "Define la estrategia regulatoria y arma el mapa de requisitos exigidos por cada autoridad.": (
  "Defines the regulatory strategy and maps the requirements demanded by each authority.",
  "Define a estratégia regulatória e monta o mapa de requisitos exigidos por cada autoridade."),

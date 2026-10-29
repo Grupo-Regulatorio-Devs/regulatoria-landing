@@ -80,7 +80,7 @@ document.querySelectorAll('.video-thumb').forEach(function(thumb){
 /* ── Hero mockup: auto-cycle the agents until the first interaction ── */
 (function(){
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var seq = ['predict','genesis','scout','binder','guard','compass'];
+  var seq = ['predict','genesis','scout','binder','guard','radar','reader','atlas','compass'];
   var idx = 0, timer = null, stopped = false;
   function step(){
     if (stopped) return;
@@ -138,7 +138,8 @@ document.querySelectorAll('.video-thumb').forEach(function(thumb){
   var dots = {
     pre: panel.querySelector('[data-hp="dot-pre"]'),
     reg: panel.querySelector('[data-hp="dot-reg"]'),
-    post: panel.querySelector('[data-hp="dot-post"]')
+    post: panel.querySelector('[data-hp="dot-post"]'),
+    vig: panel.querySelector('[data-hp="dot-vig"]')
   };
   var nodes = [].slice.call(hero.querySelectorAll('[data-agent]'));
 

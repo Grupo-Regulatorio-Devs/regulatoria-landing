@@ -30,7 +30,7 @@ Cada una lleva su `canonical`, los cuatro `hreflang` recíprocos (es / en / pt-B
 - **`dict_i18n.py`** — diccionario ES → (EN, PT). No traduce siglas (SAG, ANVISA,
   GLP, OECD…), nombres de agentes, códigos ni productos. `LMR` → *MRL* en inglés
   y se mantiene en portugués; `FDS` → *SDS* / *FISPQ*.
-- **`sprite.py`** — genera el sprite de los 15 iconos 3D. Al cambiarlo hay que
+- **`sprite.py`** — genera el sprite de los 18 iconos 3D. Al cambiarlo hay que
   reinyectarlo en `saas.html` y volver a construir.
 - **`extract.py`** — lista los strings traducibles de `saas.html`. Útil tras
   añadir contenido nuevo, para ver qué falta en el diccionario.
