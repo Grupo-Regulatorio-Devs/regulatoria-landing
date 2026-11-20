@@ -48,10 +48,15 @@ Suben cuatro rutas, no una: `index.html`, `en/index.html`, `pt/index.html` y los
 archivos SEO (`robots.txt`, `sitemap.xml`, `og-image.png`). Ver
 `deploy-gruporegulatorio-ftps` en memoria — se usa **lftp**, nunca `curl -T`.
 
-## Por qué los iconos viven en `/agentes/` y no en `/icons/`
+## Iconos de la órbita, y por qué nunca en `/icons/`
 
-Apache reserva `/icons/` como alias propio (lo usa para los iconos del listado
-de directorios), así que esa ruta **nunca llega al document root**: los archivos
-se suben bien por FTP y aun así el servidor devuelve 404. Comprobado en
-producción — un `.png` dentro de `/icons/` daba 404 y el mismo archivo en
-`/agentes/` daba 200. No renombrar esa carpeta de vuelta.
+Los iconos de los 13 agentes de la órbita van como SVG inline en `saas.html`
+(dibujos *High Contrast* de Fluent Emoji, Microsoft, licencia MIT, rellenos con
+`currentColor` en el color de la fase de cada agente). La carpeta `/agentes/`
+con los `.webp` en 3D se eliminó.
+
+Si vuelven a usarse imágenes, no ponerlas en `/icons/`: Apache reserva esa ruta
+como alias propio (la usa para los iconos del listado de directorios), así que
+**nunca llega al document root** y los archivos devuelven 404 aunque se suban
+bien. Comprobado en producción: un `.png` dentro de `/icons/` daba 404 y el
+mismo archivo en `/agentes/` daba 200.

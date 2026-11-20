@@ -3,6 +3,27 @@ document.querySelectorAll('.nav-links a').forEach(function(a){
   a.addEventListener('click', function(){ document.querySelector('.nav-links').classList.remove('open'); });
 });
 
+/* In-page links scroll to their section without writing "#demo" etc. into the
+   URL. Delegated so links added later are covered too; html{scroll-behavior:
+   smooth} keeps the glide (and the browser drops it under reduced motion). */
+document.addEventListener('click', function(e){
+  if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var id = a.getAttribute('href').slice(1);
+  var target = id ? document.getElementById(id) : null;
+  if (id && !target) return;
+  e.preventDefault();
+  if (target) {
+    target.scrollIntoView({ block: 'start' });
+    /* Move keyboard focus with the scroll, without a second jump. */
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  } else {
+    window.scrollTo({ top: 0 });
+  }
+});
+
 
 /* Safety net: if GSAP fails to load (CDN blocked/offline), reveal all content
    so the page never gets stuck showing only the hero. */
@@ -51,13 +72,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* ── Dashboard demo: switch panel when an agent is chosen ── */
 (function(){
-  var navItems = document.querySelectorAll('.dash-nav-item[data-panel]');
+  /* The sidebar logo acts as "home": it opens the inicio panel. */
+  var navItems = document.querySelectorAll('.dash-logo[data-panel], .dash-nav-item[data-panel]');
   var panels = document.querySelectorAll('.dash-panel');
   navItems.forEach(function(item){
     item.addEventListener('click', function(){
       var target = item.getAttribute('data-panel');
       navItems.forEach(function(n){ n.classList.toggle('active', n === item); });
       panels.forEach(function(p){ p.classList.toggle('active', p.getAttribute('data-panel') === target); });
+    });
+    item.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.click(); }
     });
   });
 })();
@@ -94,7 +119,7 @@ document.querySelectorAll('.video-thumb').forEach(function(thumb){
     if (timer) { clearInterval(timer); timer = null; }
     var h = document.querySelector('.mockup-hint'); if (h) h.classList.add('done');
   }
-  document.querySelectorAll('.dash-nav-item[data-panel]').forEach(function(n){
+  document.querySelectorAll('.dash-logo[data-panel], .dash-nav-item[data-panel]').forEach(function(n){
     n.addEventListener('pointerdown', stop);
   });
   var mk = document.querySelector('.browser-mockup');
@@ -147,7 +172,7 @@ document.querySelectorAll('.video-thumb').forEach(function(thumb){
     var data = cards[node.dataset.agent];
     if (!data) return;
     fields.phase.textContent  = data.fase;
-    fields.name.textContent   = node.dataset.agent;
+    fields.name.textContent   = data.nombre || node.dataset.agent;
     fields.role.textContent   = data.rol;
     fields.desc.textContent   = data.desc;
     fields.metric.textContent = data.dato;
@@ -211,12 +236,10 @@ mm.add("(prefers-reduced-motion: no-preference)", function() {
      clearProps releases the transform. */
   var heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
   heroTl
-    .fromTo(".hero-badge", { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.8, clearProps: "transform" })
-    .fromTo(".hero h1", { y: 50, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1, clearProps: "transform" }, "-=0.4")
+    .fromTo(".hero h1", { y: 50, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1, clearProps: "transform" })
     .fromTo(".hero .lead", { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.8, clearProps: "transform" }, "-=0.5")
     .fromTo(".hero-btns .btn-glow", { x: -30, autoAlpha: 0 }, { x: 0, autoAlpha: 1, duration: 0.6, clearProps: "transform" }, "-=0.4")
     .fromTo(".hero-btns .btn-ghost", { x: 30, autoAlpha: 0 }, { x: 0, autoAlpha: 1, duration: 0.6, clearProps: "transform" }, "-=0.5")
-    .fromTo(".hero-trust", { y: 20, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.6, clearProps: "transform" }, "-=0.3")
     .fromTo(".hero-orbit", { autoAlpha: 0 }, { autoAlpha: 1, duration: 1, ease: "power2.out" }, "-=0.9");
   /* No `scale` on purpose: .hero-orbit's transform is driven by --orb-k per
      breakpoint, and GSAP froze it at an inline value. */
@@ -261,14 +284,14 @@ gsap.from(".phase-card", { y: 60, autoAlpha: 0, duration: 0.8, stagger: 0.2, eas
   gsap.from(".hitl-guarantee", { y: 40, autoAlpha: 0, duration: 0.9, ease: "power2.out", scrollTrigger: { trigger: ".hitl-guarantee", start: "top 85%" } });
 
   /* 7. Security cards */
-  gsap.from(".security-section .section-header", { y: 50, autoAlpha: 0, duration: 0.9, ease: "power2.out", scrollTrigger: { trigger: ".security-section", start: "top 75%" } });
-  gsap.from(".security-card", { y: 50, autoAlpha: 0, duration: 0.7, stagger: 0.1, ease: "power2.out", scrollTrigger: { trigger: ".security-grid", start: "top 80%" } });
-  gsap.from(".security-compliance", { y: 30, autoAlpha: 0, duration: 0.8, ease: "power2.out", scrollTrigger: { trigger: ".security-compliance", start: "top 85%" } });
+  gsap.from(".sec-intro", { y: 50, autoAlpha: 0, duration: 0.9, ease: "power2.out", scrollTrigger: { trigger: ".security-section", start: "top 75%" } });
+  gsap.from(".sec-item", { y: 30, autoAlpha: 0, duration: 0.6, stagger: 0.08, ease: "power2.out", scrollTrigger: { trigger: ".sec-list", start: "top 80%" } });
+  
 
   /* 7b. Coverage */
-  gsap.from(".cobertura-section .section-tag, .cobertura-section .section-title, .cobertura-section .section-sub", { y: 40, autoAlpha: 0, duration: 0.9, stagger: 0.15, ease: "power2.out", scrollTrigger: { trigger: ".cobertura-section", start: "top 75%" } });
-  gsap.from(".cobertura-stats .cob-stat", { y: 30, autoAlpha: 0, duration: 0.6, stagger: 0.12, ease: "power2.out", scrollTrigger: { trigger: ".cobertura-stats", start: "top 85%" } });
-  gsap.from(".country-row", { y: 30, autoAlpha: 0, duration: 0.6, stagger: 0.08, ease: "power2.out", scrollTrigger: { trigger: ".countries-grid", start: "top 85%" } });
+  gsap.from(".cobertura-section .section-title, .cobertura-section .section-sub", { y: 40, autoAlpha: 0, duration: 0.9, stagger: 0.15, ease: "power2.out", scrollTrigger: { trigger: ".cobertura-section", start: "top 75%" } });
+  /* Fade only, no vertical offset: the rows of the grid always stay level. */
+  gsap.from(".country-row", { autoAlpha: 0, duration: 0.6, stagger: 0.06, ease: "power2.out", scrollTrigger: { trigger: ".countries-grid", start: "top 85%" } });
 
   /* 8. CTA */
   gsap.set(".video-card", { autoAlpha: 1, y: 0 });
@@ -297,7 +320,7 @@ gsap.from(".phase-card", { y: 60, autoAlpha: 0, duration: 0.8, stagger: 0.2, eas
 
 /* Reduced motion fallback */
 mm.add("(prefers-reduced-motion: reduce)", function() {
-  gsap.set(".reveal, .faq-item, .hero-badge, .hero h1, .hero .lead, .hero-btns, .hero-trust, .hero-orbit, .nav, .stat-num, .phase-card, .hitl-step, .hitl-guarantee, .security-card, .security-compliance, .cta-box, .contact-form, .footer-inner, .browser-mockup, .pf-item, .country-row, .cob-stat", {
+  gsap.set(".reveal, .faq-item, .hero-badge, .hero h1, .hero .lead, .hero-btns, .hero-trust, .hero-orbit, .nav, .stat-num, .phase-card, .hitl-step, .hitl-guarantee, .sec-item, .cta-box, .contact-form, .footer-inner, .browser-mockup, .pf-item, .country-row, .cob-stat", {
     autoAlpha: 1, y: 0, x: 0, scale: 1
   });
 });

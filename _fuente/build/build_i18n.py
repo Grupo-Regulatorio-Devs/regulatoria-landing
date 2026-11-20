@@ -10,7 +10,7 @@ so a short string like "Activo" is never substituted inside a longer word. The
 JSON-LD graph is translated separately by walking the object, because its anchors
 are "key":"value" and the HTML rules above do not match them.
 """
-import io, os, re, sys, json
+import io, os, re, sys, json, hashlib
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -35,6 +35,12 @@ IDX = {'en': 0, 'pt': 1}   # position in the dictionary tuple
 
 # Aria label of the language switcher, per language.
 SWITCHER_ARIA = {'es': 'Seleccionar idioma', 'en': 'Select language', 'pt': 'Selecionar idioma'}
+
+
+def asset_hash(name):
+    """Short content hash of a shared asset, used as its ?v= cache-buster."""
+    with open(os.path.join(ROOT, name), 'rb') as f:
+        return hashlib.sha1(f.read()).hexdigest()[:10]
 
 
 def translate(html, lang, counter):
@@ -65,7 +71,7 @@ def translate(html, lang, counter):
                       html)
         # 3b. single-quoted orbit-card fields  ->  key:'text'
         #     (the rule above only reaches double quotes)
-        html = re.sub(r"((?:fase|rol|desc|dato):')" + esc + r"(')",
+        html = re.sub(r"((?:nombre|fase|rol|desc|dato):')" + esc + r"(')",
                       lambda m: m.group(1) + dest.replace('\\', '\\\\') + m.group(2),
                       html)
         # 4. <title>
@@ -103,7 +109,8 @@ def build(lang):
     h = translate(h, lang, n)
 
     # ── 2. document lang attribute ──
-    h = h.replace('<html lang="es">', f'<html lang="{cfg["code"]}">', 1)
+    # html lang matches the hreflang (pt-BR, not just pt)
+    h = h.replace('<html lang="es">', f'<html lang="{cfg["hreflang"]}">', 1)
 
     # ── 3. canonical + hreflang + og:locale ──
     url = BASE + cfg['path']
@@ -176,7 +183,14 @@ def build(lang):
     assert h.count(anchor) == 1, 'nav-cta anchor not found'
     h = h.replace(anchor, '      ' + language_selector(lang) + '\n' + anchor, 1)
 
-    dest = os.path.join(ROOT, cfg['path'], 'index.html')
+    # ── 6. cache-bust the shared assets with a hash of their content, so a
+    #     deploy that changes main.js / styles.css is never served stale ──
+    for asset in ('styles.css', 'main.js'):
+        ref = '"/' + asset + '"'
+        assert h.count(ref) == 1, asset + ' reference not found'
+        h = h.replace(ref, '"/' + asset + '?v=' + asset_hash(asset) + '"', 1)
+
+    dest =os.path.join(ROOT, cfg['path'], 'index.html')
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     open(dest, 'w', encoding='utf-8').write(h)
     return dest, n[0], len(h)

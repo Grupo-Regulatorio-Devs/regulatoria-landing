@@ -8,8 +8,9 @@ read the whole repo — this file only points you at the moving parts.
 The public marketing site for **RegulatorIA** (Grupo Regulatorio SpA), an
 AI-native platform that automates the registration of agrochemicals and
 pesticides before LATAM regulatory authorities. The product is a suite of 13
-specialized AI agents plus an orchestrator, with mandatory human-in-the-loop
-(HITL) expert validation, split into two use cases: **registration** (10 agents
+specialized AI agents, with mandatory human-in-the-loop (HITL) expert validation
+(there is no orchestrator: the human expert picks the agent for each task, and
+the hero orbit's center node is the REGULATOR.IA hub — favicon "R" — linked to every agent, not an AI router), split into two use cases: **registration** (10 agents
 across three phases: pre-registration, registration, post-registration) and
 **market surveillance** of the illegal trade (RADAR, READER, ATLAS, aimed at
 industry associations and brands). The landing presents them as one ecosystem:
@@ -84,9 +85,12 @@ When you add new text to `saas.html`:
   instead of posting here. Its `$_POST` field names (`nombre`, `cargo`,
   `empresa`, `email`, `website`) still match what the form collects, so the file
   works as-is the day the site moves back to a host with PHP.
-- `agentes/*.webp` — the 14 agent icons (13 agents + orchestrator; Fluent Emoji 3D style, 81×81). **This folder must not be renamed
-  `icons/`:** Apache reserves `/icons/` as its own alias, so files there return
-  404 even when uploaded correctly. Verified in production.
+- Hero orbit icons — inline SVG in `saas.html`: the 13 agents use the Fluent
+  Emoji *High Contrast* drawings (Microsoft, MIT) filled with `currentColor` in
+  each agent's phase color; the center draws the favicon "R". The old raster
+  icons (`agentes/*.webp`) were removed. If image assets ever come back, never
+  put them under `/icons/`: Apache reserves it as its own alias, so files there
+  return 404 even when uploaded correctly (verified in production).
 - `blog/` — SEO articles (not linked from the landing nav).
 - `llms.txt`, `robots.txt`, `sitemap.xml`, `favicon.*`, `apple-touch-icon.png`,
   `og-image.png` — SEO / crawler assets.

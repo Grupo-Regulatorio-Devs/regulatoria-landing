@@ -4,7 +4,7 @@
 NOT translated (left as-is):
   · acronyms and agencies: SAG, SENASA, ANVISA, IBAMA, MAPA, ICA, COFEPRIS, EPA, ECHA, EFSA
   · standards and tech    : GLP, OECD, GHS, CLP, CADRI, ISO 27001, AES-256, TLS 1.3, QSAR, RBAC
-  · agent names           : COMPASS — The Navigator, etc. (already English, they are branding)
+  · agent names           : COMPASS, The Navigator, etc. (already English, they are branding)
   · codes and products    : REG-CHL-2024-1021, Herbex 480 SC, OF-2024-1182…
 Localization notes:
   · LMR -> EN "MRL" · PT keeps "LMR"
@@ -14,12 +14,12 @@ Localization notes:
 T = {
 
 # ══════════════════════════ FAQ — answers ══════════════════════════
-"RegulatorIA es una plataforma AI-native que automatiza el registro de agroquímicos y plaguicidas ante las autoridades regulatorias de LATAM. Combina 13 agentes de inteligencia artificial especializados —que cubren desde la estrategia regulatoria y la toxicología in silico hasta el armado del dossier, la vigilancia post-registro y la detección del comercio ilegal— con validación obligatoria de expertos regulatorios humanos antes de cada entrega.": (
- "RegulatorIA is an AI-native platform that automates the registration of agrochemicals and pesticides with LATAM regulatory authorities. It combines 13 specialised artificial intelligence agents —covering everything from regulatory strategy and in silico toxicology to dossier assembly, post-registration monitoring and illegal-trade detection— with mandatory validation by human regulatory experts before every delivery.",
- "A RegulatorIA é uma plataforma AI-native que automatiza o registro de agroquímicos e agrotóxicos junto às autoridades regulatórias da América Latina. Combina 13 agentes de inteligência artificial especializados —que cobrem desde a estratégia regulatória e a toxicologia in silico até a montagem do dossiê, a vigilância pós-registro e a detecção do comércio ilegal— com validação obrigatória de especialistas regulatórios humanos antes de cada entrega."),
+"RegulatorIA es una plataforma AI-native que automatiza el registro de agroquímicos y plaguicidas ante las autoridades regulatorias de LATAM. Combina 13 agentes de inteligencia artificial especializados, que cubren desde la estrategia regulatoria y la toxicología in silico hasta el armado del dossier, la vigilancia post-registro y la detección del comercio ilegal, con validación obligatoria de expertos regulatorios humanos antes de cada entrega.": (
+ "RegulatorIA is an AI-native platform that automates the registration of agrochemicals and pesticides with LATAM regulatory authorities. It combines 13 specialised artificial intelligence agents, covering everything from regulatory strategy and in silico toxicology to dossier assembly, post-registration monitoring and illegal-trade detection, with mandatory validation by human regulatory experts before every delivery.",
+ "A RegulatorIA é uma plataforma AI-native que automatiza o registro de agroquímicos e agrotóxicos junto às autoridades regulatórias da América Latina. Combina 13 agentes de inteligência artificial especializados, que cobrem desde a estratégia regulatória e a toxicologia in silico até a montagem do dossiê, a vigilância pós-registro e a detecção do comércio ilegal, com validação obrigatória de especialistas regulatórios humanos antes de cada entrega."),
 
 "Una parte importante del plazo de un registro se va en preparar, revisar y corregir el expediente. RegulatorIA reduce hasta en un 80% los tiempos de esa etapa documental y de análisis: el armado del dossier, la revisión GLP/OECD y las respuestas a observaciones pasan de semanas a días. Los plazos de evaluación propios de cada autoridad no cambian, porque dependen del organismo.": (
- "A significant part of a registration timeline goes into preparing, reviewing and correcting the file. RegulatorIA cuts up to 80% of the time spent on that documentation and analysis stage: dossier assembly, GLP/OECD review and responses to objections go from weeks to days. Each authority's own evaluation timelines do not change, since they depend on the agency.",
+ "A significant part of a registration timeline goes into preparing, reviewing and correcting the file. RegulatorIA cuts up to 80% of the time spent on that documentation and analysis stage: dossier assembly, GLP/OECD review and responses to objections go from weeks to days. Each authority's own review times stay the same, as they are set by the agency.",
  "Uma parte importante do prazo de um registro é gasta em preparar, revisar e corrigir o processo. A RegulatorIA reduz em até 80% os tempos dessa etapa documental e de análise: a montagem do dossiê, a revisão GLP/OECD e as respostas a exigências passam de semanas para dias. Os prazos de avaliação de cada autoridade não mudam, pois dependem do órgão."),
 
 "La plataforma opera en Chile (SAG), Argentina (SENASA), Brasil (IBAMA/ANVISA/MAPA), Colombia (ICA), Perú (SENASA) y México (COFEPRIS/SENASICA). Además, el agente BRIDGE adapta dossiers a formatos internacionales como EPA (Estados Unidos), ECHA (Unión Europea) y ANVISA.": (
@@ -32,11 +32,11 @@ T = {
 
 "RegulatorIA trabaja con los formatos y estándares exigidos en la región y fuera de ella: CADRI, GLP y directrices OECD, clasificación GHS y CLP (Reglamento CE 1272/2008), fichas de datos de seguridad (FDS/SDS) de 16 secciones, etiquetado en más de 30 idiomas, y los expedientes de SAG, SENASA, ICA, COFEPRIS, ANVISA, EPA y ECHA.": (
  "RegulatorIA works with the formats and standards required in the region and beyond: CADRI, GLP and OECD guidelines, GHS and CLP classification (EC Regulation 1272/2008), 16-section safety data sheets (SDS), labelling in over 30 languages, and the filing formats of SAG, SENASA, ICA, COFEPRIS, ANVISA, EPA and ECHA.",
- "A RegulatorIA trabalha com os formatos e padrões exigidos na região e fora dela: CADRI, GLP e diretrizes OECD, classificação GHS e CLP (Regulamento CE 1272/2008), fichas de informação de segurança (FISPQ/SDS) de 16 seções, rotulagem em mais de 30 idiomas, e os processos de SAG, SENASA, ICA, COFEPRIS, ANVISA, EPA e ECHA."),
+ "A RegulatorIA trabalha com os formatos e padrões exigidos na região e fora dela: CADRI, GLP e diretrizes OECD, classificação GHS e CLP (Regulamento CE 1272/2008), fichas de informações de segurança (FISPQ/SDS) de 16 seções, rotulagem em mais de 30 idiomas, e os processos de SAG, SENASA, ICA, COFEPRIS, ANVISA, EPA e ECHA."),
 
-"Los datos se manejan con seguridad de nivel enterprise: cifrado en tránsito y en reposo, aislamiento por cliente, control de acceso por roles y trazabilidad completa de cada acción sobre el expediente. La información técnica de tus moléculas y estudios no se usa para entrenar modelos ni se comparte con terceros.": (
- "Data is handled with enterprise-grade security: encryption in transit and at rest, per-client isolation, role-based access control and full traceability of every action on the file. The technical information on your molecules and studies is never used to train models nor shared with third parties.",
- "Os dados são tratados com segurança de nível enterprise: criptografia em trânsito e em repouso, isolamento por cliente, controle de acesso por perfis e rastreabilidade completa de cada ação sobre o processo. As informações técnicas das suas moléculas e estudos não são usadas para treinar modelos nem compartilhadas com terceiros."),
+"Los datos se manejan con seguridad de primer nivel: cifrado en tránsito y en reposo, aislamiento por cliente, control de acceso por roles y trazabilidad completa de cada acción sobre el expediente. La información técnica de tus moléculas y estudios no se usa para entrenar modelos ni se comparte con terceros.": (
+ "Data is handled with top-tier security: encryption in transit and at rest, per-client isolation, role-based access control and full traceability of every action on the file. The technical information on your molecules and studies is not used to train models and is not shared with third parties.",
+ "Os dados são tratados com segurança de primeira linha: criptografia em trânsito e em repouso, isolamento por cliente, controle de acesso por perfis e rastreabilidade completa de cada ação sobre o processo. As informações técnicas das suas moléculas e estudos não são usadas para treinar modelos nem compartilhadas com terceiros."),
 
 "Sí. Ese es precisamente el trabajo del agente BRIDGE: toma un dossier ya aprobado y lo adapta al país de destino, identificando qué estudios se pueden reciclar, cuáles hay que complementar y qué equivalencias aplican entre normativas. Esto evita repetir estudios costosos y acorta significativamente el segundo y tercer registro.": (
  "Yes. That is exactly what the BRIDGE agent does: it takes an already-approved dossier and adapts it to the destination country, identifying which studies can be reused, which need supplementing and which equivalences apply between regulations. This avoids repeating expensive studies and significantly shortens the second and third registrations.",
@@ -65,13 +65,13 @@ T = {
 "El software que": ("The software that", "O software que"),
 "automatiza tu registro": ("automates your registration", "automatiza o seu registro"),
 "de agroquímicos.": ("of agrochemicals.", "de agroquímicos."),
-"13 agentes de IA especializados gestionan el ciclo completo de registro de plaguicidas y vigilan el comercio ilegal. Validados por expertos regulatorios (HITL) y protegidos con seguridad enterprise.": (
- "13 specialised AI agents manage the full pesticide registration cycle and monitor the illegal trade. Validated by regulatory experts (HITL) and protected with enterprise-grade security.",
- "13 agentes de IA especializados gerenciam o ciclo completo de registro de agrotóxicos e monitoram o comércio ilegal. Validados por especialistas regulatórios (HITL) e protegidos com segurança enterprise."),
+"13 agentes de IA especializados gestionan el ciclo completo de registro de plaguicidas y vigilan el comercio ilegal. Validados por expertos regulatorios y protegidos con seguridad de primer nivel.": (
+ "13 specialised AI agents manage the full pesticide registration cycle and monitor the illegal trade. Validated by regulatory experts and protected by top-tier security.",
+ "13 agentes de IA especializados gerenciam o ciclo completo de registro de agrotóxicos e monitoram o comércio ilegal. Validados por especialistas regulatórios e protegidos com segurança de primeira linha."),
 "Plataforma AI-Native · Chile y LATAM": ("AI-Native Platform · Chile & LATAM", "Plataforma AI-Native · Chile e América Latina"),
-"Obtén tu Demo Gratis →": ("Get your Free Demo →", "Solicite sua Demo Gratuita →"),
-"Solicitar Demo Gratis →": ("Request Free Demo →", "Solicitar Demo Gratuita →"),
-"Obtén tu Demo": ("Get a Demo", "Solicitar Demo"),
+"Obtén tu Demo Gratis →": ("Get your free demo →", "Solicite sua demo gratuita →"),
+"Solicitar Demo Gratis →": ("Request a free demo →", "Solicitar demo gratuita →"),
+"Obtén tu Demo": ("Get a demo", "Solicitar demo"),
 "Ver la plataforma": ("See the platform", "Ver a plataforma"),
 "Sin contratos de largo plazo": ("No long-term contracts", "Sem contratos de longo prazo"),
 "Seguridad enterprise": ("Enterprise security", "Segurança enterprise"),
@@ -84,7 +84,17 @@ T = {
 "Comparativa": ("Comparison", "Comparativo"),
 "Startups": ("Startups", "Startups"),
 "Seguridad": ("Security", "Segurança"),
+"Registro de agroquímicos y vigilancia del comercio ilegal en Latinoamérica, con agentes de IA y validación experta.": (
+ "Agrochemical registration and illegal-trade surveillance across Latin America, with AI agents and expert validation.",
+ "Registro de agroquímicos e vigilância do comércio ilegal na América Latina, com agentes de IA e validação especializada."),
+"Agentes": ("Agents", "Agentes"),
+"Servicio gestionado": ("Managed service", "Serviço gerenciado"),
+"Contacto": ("Contact", "Contato"),
+"Garantías": ("Assurance", "Garantias"),
+"Agendar demo": ("Book a demo", "Agendar demo"),
 "Cobertura": ("Coverage", "Cobertura"),
+"Reconocimientos": ("Recognitions", "Reconhecimentos"),
+"F6S: #27 Top Company en AI (Artificial Intelligence), noviembre 2026": ("F6S: #27 Top Company in AI (Artificial Intelligence), November 2026", "F6S: #27 Top Company em AI (Artificial Intelligence), novembro de 2026"),
 "Videos": ("Videos", "Vídeos"),
 "Idioma": ("Language", "Idioma"),
 
@@ -92,13 +102,13 @@ T = {
 "La Plataforma": ("The Platform", "A Plataforma"),
 "Todo tu proceso regulatorio,": ("Your entire regulatory process,", "Todo o seu processo regulatório,"),
 "en un solo dashboard.": ("in a single dashboard.", "em um único painel."),
-"Gestiona dossiers, monitorea estados y recibe alertas de vencimiento — todo desde una interfaz diseñada para equipos regulatorios.": (
- "Manage dossiers, track statuses and get expiry alerts — all from an interface built for regulatory teams.",
- "Gerencie dossiês, acompanhe status e receba alertas de vencimento — tudo em uma interface feita para equipes regulatórias."),
+"Gestiona dossiers, monitorea estados y recibe alertas de vencimiento, todo desde una interfaz diseñada para equipos regulatorios.": (
+ "Manage dossiers, track statuses and get expiry alerts, all from an interface built for regulatory teams.",
+ "Gerencie dossiês, acompanhe status e receba alertas de vencimento, tudo em uma interface feita para equipes regulatórias."),
 "Demo interactiva · haz clic en un agente del menú": ("Interactive demo · click an agent in the menu", "Demo interativa · clique em um agente no menu"),
 "Buscar dossiers, productos, países, agentes...": ("Search dossiers, products, countries, agents...", "Buscar dossiês, produtos, países, agentes..."),
 "Dashboard en tiempo real": ("Real-time dashboard", "Painel em tempo real"),
-"Estado de cada registro actualizado al instante": ("Every registration status updated instantly", "Status de cada registro atualizado na hora"),
+"Estado de cada registro actualizado al instante": ("The status of every registration, updated instantly", "Status de cada registro atualizado instantaneamente"),
 "Agentes disponibles 24/7": ("Agents available 24/7", "Agentes disponíveis 24/7"),
 "Trabajan en paralelo mientras tú descansas": ("They work in parallel while you rest", "Trabalham em paralelo enquanto você descansa"),
 "Alertas de vencimiento": ("Expiry alerts", "Alertas de vencimento"),
@@ -110,7 +120,13 @@ T = {
 "La plataforma asigna automáticamente el agente correcto en cada etapa del proceso regulatorio. Tú supervisas, la IA trabaja.": (
  "The platform automatically assigns the right agent at each stage of the regulatory process. You supervise, the AI works.",
  "A plataforma atribui automaticamente o agente certo em cada etapa do processo regulatório. Você supervisiona, a IA trabalha."),
-"ORQUESTADOR": ("ORCHESTRATOR", "ORQUESTRADOR"),
+"Un ecosistema,<br>13 agentes conectados": ("One ecosystem,<br>13 connected agents", "Um ecossistema,<br>13 agentes conectados"),
+"Un ecosistema,": ("One ecosystem,", "Um ecossistema,"),
+"13 agentes conectados": ("13 connected agents", "13 agentes conectados"),
+"El ecosistema": ("The ecosystem", "O ecossistema"),
+"Una sola plataforma conecta a los 13 agentes sobre el mismo dossier. Tu experto elige cuál usar y valida cada resultado.": (
+ "One platform connects all 13 agents on the same dossier. Your expert picks which one to use and validates every result.",
+ "Uma única plataforma conecta os 13 agentes sobre o mesmo dossiê. Seu especialista escolhe qual usar e valida cada resultado."),
 
 # ══════════════════════════ Phases ══════════════════════════
 "Ecosistema de 13 agentes": ("An ecosystem of 13 agents", "Ecossistema de 13 agentes"),
@@ -122,7 +138,7 @@ T = {
 "Caso de uso · Vigilancia de mercado": ("Use case · Market surveillance", "Caso de uso · Vigilância de mercado"),
 "Gremios y marcas · Comercio ilegal": ("Industry associations and brands · Illegal trade", "Associações e marcas · Comércio ilegal"),
 "Detección, verificación y mapa": ("Detection, verification and mapping", "Detecção, verificação e mapa"),
-"Ver el programa →": ("See the program →", "Ver o programa →"),
+"Ver el programa →": ("See the programme →", "Ver o programa →"),
 "Fase I · Pre-Registro": ("Phase I · Pre-Registration", "Fase I · Pré-Registro"),
 "Fase II · Registro": ("Phase II · Registration", "Fase II · Registro"),
 "Fase III · Post-Registro": ("Phase III · Post-Registration", "Fase III · Pós-Registro"),
@@ -137,9 +153,9 @@ T = {
  "Each agent covers one service in the regulatory process: same quality, a fraction of the time and cost.",
  "Cada agente cobre um serviço do processo regulatório: mesma qualidade, uma fração do tempo e do custo."),
 "Servicio (Agente)": ("Service (Agent)", "Serviço (Agente)"),
-"Consultora Tradicional": ("Traditional Consultancy", "Consultoria Tradicional"),
+"Consultora Tradicional": ("Traditional consultancy", "Consultoria Tradicional"),
 "COMPASS — Requisitos Regulatorios": ("COMPASS — Regulatory Requirements", "COMPASS — Requisitos Regulatórios"),
-"PREDICT — Toxicología in silico": ("PREDICT — In silico toxicology", "PREDICT — Toxicologia in silico"),
+"PREDICT — Toxicología in silico": ("PREDICT — In Silico Toxicology", "PREDICT — Toxicologia in silico"),
 "GENESIS — Diseño de Moléculas": ("GENESIS — Molecule Design", "GENESIS — Design de Moléculas"),
 "SCOUT — Inteligencia Regulatoria": ("SCOUT — Regulatory Intelligence", "SCOUT — Inteligência Regulatória"),
 "BINDER — Gestión Documental": ("BINDER — Document Management", "BINDER — Gestão Documental"),
@@ -154,22 +170,26 @@ T = {
 "Predicciones QSAR automáticas": ("Automatic QSAR predictions", "Predições QSAR automáticas"),
 "No existe equivalente": ("No equivalent exists", "Não existe equivalente"),
 "Safe-by-Design generativo": ("Generative Safe-by-Design", "Safe-by-Design generativo"),
-"Monitoreo normativo": ("Regulatory monitoring", "Monitoramento normativo"),
-"Manual, periódica": ("Manual, periodic", "Manual, periódico"),
-"24/7 automatizado": ("24/7 automated", "24/7 automatizado"),
-"4-8 semanas compilación manual": ("4-8 weeks manual compilation", "4-8 semanas de compilação manual"),
-"Dashboard completitud + Document AI": ("Completeness dashboard + Document AI", "Painel de completude + Document AI"),
+"Manual, periódica": ("Manual, periodic", "Manual, periódica"),
+"Automatizado": ("Automated", "Automatizado"),
+"Dossier automático": ("Automatic dossier", "Dossiê automático"),
+"Revisión automática en 3 niveles": ("Automatic 3-level review", "Revisão automática em 3 níveis"),
+"Revisión en 3 niveles": ("3-level review", "Revisão em 3 níveis"),
+"Respuesta técnica a cada objeción": ("A technical answer to every objection", "Resposta técnica a cada exigência"),
+"Respuesta a objeciones": ("Answers to objections", "Resposta a exigências"),
+"Hojas de seguridad y etiquetas en más de 30 idiomas": ("Safety data sheets and labels in 30+ languages", "FISPQ e rótulos em mais de 30 idiomas"),
+"Más de 30 idiomas": ("30+ languages", "Mais de 30 idiomas"),
+"Reutiliza el dossier aprobado en otros países": ("Reuses the approved dossier in other countries", "Reaproveita o dossiê aprovado em outros países"),
+"Reutiliza el dossier": ("Reuses the dossier", "Reaproveita o dossiê"),
+"Alertas de vencimiento por email, SMS y ERP": ("Expiry alerts by email, SMS and ERP", "Alertas de vencimento por e-mail, SMS e ERP"),
+"4-8 semanas compilación manual": ("4-8 weeks of manual compilation", "4-8 semanas de compilação manual"),
+"Arma el dossier y muestra qué falta": ("Builds the dossier and shows what is missing", "Monta o dossiê e mostra o que falta"),
 "Revisión manual (2-4 semanas)": ("Manual review (2-4 weeks)", "Revisão manual (2-4 semanas)"),
-"Abogados externos ($$$)": ("External lawyers ($$$)", "Advogados externos ($$$)"),
-"Defensas IA ante objeciones": ("AI defences against objections", "Defesas de IA contra exigências"),
-"SDS 16 secciones + CLP/GHS, 30+ idiomas": ("16-section SDS + CLP/GHS, 30+ languages", "FISPQ de 16 seções + CLP/GHS, 30+ idiomas"),
+"Abogados externos": ("External lawyers", "Advogados externos"),
 "Registro país por país (lineal)": ("Country-by-country registration (linear)", "Registro país a país (linear)"),
-"Adapta dossier ANVISA/EPA/ECHA": ("Adapts dossier for ANVISA/EPA/ECHA", "Adapta dossiê para ANVISA/EPA/ECHA"),
 "Revisión manual periódica": ("Periodic manual review", "Revisão manual periódica"),
-"Alertas Email→SMS→Bloqueo ERP": ("Email→SMS→ERP block alerts", "Alertas E-mail→SMS→Bloqueio ERP"),
 "Tiempo total por registro": ("Total time per registration", "Tempo total por registro"),
 "Tasa de errores documentales": ("Documentation error rate", "Taxa de erros documentais"),
-"Tiempo de revisión experto": ("Expert review time", "Tempo de revisão do especialista"),
 "Escalabilidad (multi-país)": ("Scalability (multi-country)", "Escalabilidade (multipaís)"),
 "Lineal: más equipo por país": ("Linear: more staff per country", "Linear: mais equipe por país"),
 "Paralelo: mismos agentes": ("Parallel: same agents", "Paralelo: mesmos agentes"),
@@ -177,13 +197,13 @@ T = {
 # ══════════════════════════ Managed service ══════════════════════════
 "Servicio gestionado · Llave en mano": ("Managed service · Turnkey", "Serviço gerenciado · Chave na mão"),
 "¿Sin equipo regulatorio?": ("No regulatory team?", "Sem equipe regulatória?"),
-"Lo registramos por ti.": ("We register it for you.", "Nós registramos para você."),
-"Para startups y biotech que innovan en agro pero no tienen —ni quieren montar— un área regulatoria. Nuestro equipo de expertos senior, potenciado con la IA de RegulatorIA, gestiona todo tu registro de principio a fin.": (
- "For startups and biotechs innovating in agriculture that don't have —and don't want to build— a regulatory department. Our team of senior experts, powered by RegulatorIA's AI, handles your entire registration from start to finish.",
- "Para startups e biotechs que inovam no agro mas não têm —nem querem montar— uma área regulatória. Nossa equipe de especialistas sênior, potencializada pela IA da RegulatorIA, conduz todo o seu registro do início ao fim."),
+"Lo registramos por ti.": ("We register it for you.", "Registramos para você."),
+"Para startups y biotech que innovan en agro pero no tienen, ni quieren montar, un área regulatoria. Nuestro equipo de expertos senior, potenciado con la IA de RegulatorIA, gestiona todo tu registro de principio a fin.": (
+ "For startups and biotechs innovating in agriculture that don't have, and don't want to build, a regulatory department. Our team of senior experts, powered by RegulatorIA's AI, handles your entire registration from start to finish.",
+ "Para startups e biotechs que inovam no agro mas não têm, nem querem montar, uma área regulatória. Nossa equipe de especialistas sênior, potencializada pela IA da RegulatorIA, conduz todo o seu registro do início ao fim."),
 "Estrategia": ("Strategy", "Estratégia"),
 "Definimos la ruta regulatoria óptima por país, con requisitos y tiempos para tu producto.": (
- "We define the optimal regulatory route per country, with requirements and timelines for your product.",
+ "We define the optimal regulatory pathway per country, with requirements and timelines for your product.",
  "Definimos a rota regulatória ideal por país, com requisitos e prazos para o seu produto."),
 "Dossier completo": ("Complete dossier", "Dossiê completo"),
 "Armamos y validamos el expediente técnico: toxicología, eco-tox, residuos y etiqueta.": (
@@ -200,17 +220,13 @@ T = {
 "Tú te enfocas en tu producto. Nosotros, en que llegue al mercado.": (
  "You focus on your product. We focus on getting it to market.",
  "Você foca no seu produto. Nós, em levá-lo ao mercado."),
-"🌱 Startups agrotech": ("🌱 Agrotech startups", "🌱 Startups de agrotech"),
-"🧬 Biotech sin área regulatoria": ("🧬 Biotech with no regulatory team", "🧬 Biotech sem área regulatória"),
-"🚀 Tu primer registro": ("🚀 Your first registration", "🚀 Seu primeiro registro"),
-"🌎 Nuevo mercado LATAM": ("🌎 New LATAM market", "🌎 Novo mercado na América Latina"),
-"💬 Agenda una llamada": ("💬 Book a call", "💬 Agende uma ligação"),
+"Agenda una llamada": ("Book a call", "Agende uma ligação"),
 
 # ══════════════════════════ Dashboard · market surveillance ══════════════════════════
 "RADAR · Alertas de marketplaces y redes": ("RADAR · Marketplace and social media alerts", "RADAR · Alertas de marketplaces e redes"),
 "READER · Verificación de etiquetas": ("READER · Label verification", "READER · Verificação de rótulos"),
 "ATLAS · Puntos calientes del comercio ilegal": ("ATLAS · Illegal-trade hotspots", "ATLAS · Pontos críticos do comércio ilegal"),
-"Contra el registro oficial": ("Against the official register", "Contra o registro oficial"),
+"Contra el registro oficial": ("Against the official register", "Com base no registro oficial"),
 "Por canal, marca y región": ("By channel, brand and region", "Por canal, marca e região"),
 "Publicaciones hoy": ("Listings today", "Publicações hoje"),
 "analizadas": ("analysed", "analisadas"),
@@ -277,6 +293,11 @@ T = {
 "22 señales": ("22 signals", "22 sinais"),
 "14 señales": ("14 signals", "14 sinais"),
 "8.412": ("8,412", "8.412"),
+"1.248": ("1,248", "1.248"),
+"1.204": ("1,204", "1.204"),
+"3,2x": ("3.2x", "3,2x"),
+"11,4 mg/L": ("11.4 mg/L", "11,4 mg/L"),
+"🇪🇺 UE · EFSA": ("🇪🇺 EU · EFSA", "🇪🇺 UE · EFSA"),
 "1.208": ("1,208", "1.208"),
 
 # ══════════════════════════ Illegal trade ══════════════════════════
@@ -285,38 +306,23 @@ T = {
 "Nosotros también.": ("So are we.", "Nós também."),
 "Vigilancia con IA del comercio digital de agroquímicos, fertilizantes y bioestimulantes, que convierte lo detectado en evidencia lista para actuar.": (
  "AI-powered surveillance of the online trade in agrochemicals, fertilisers and biostimulants, turning every finding into evidence ready for action.",
- "Vigilância com IA do comércio digital de agroquímicos, fertilizantes e bioestimulantes, que transforma o que é detectado em evidência pronta para agir."),
+ "Vigilância com IA do comércio digital de agroquímicos, fertilizantes e bioestimulantes, que transforma o que é detectado em evidências prontas para a ação."),
 "Detecta": ("Detects", "Detecta"),
 "Verifica": ("Verifies", "Verifica"),
 "Mapea": ("Maps", "Mapeia"),
-"Vigila marketplaces, redes sociales y grupos de mensajería en tiempo real y detecta anuncios de riesgo: vendedores sin habilitación, marcas no registradas y precios fuera de mercado.": (
- "Monitors marketplaces, social networks and messaging groups in real time and flags risky listings: unlicensed sellers, unregistered brands and off-market prices.",
- "Monitora marketplaces, redes sociais e grupos de mensagens em tempo real e detecta anúncios de risco: vendedores sem habilitação, marcas não registradas e preços fora de mercado."),
-"Lee las etiquetas publicadas y verifica registro y composición contra el registro oficial de cada país (SENASA, SENAVE, SAG, ICA, entre otras). Cualquier persona puede subir la foto de una etiqueta para saber si el producto es real o falsificado.": (
- "Reads the labels in each listing and checks registration and composition against each country's official register (SENASA, SENAVE, SAG, ICA, among others). Anyone can upload a photo of a label to find out whether the product is genuine or counterfeit.",
- "Lê os rótulos publicados e verifica registro e composição contra o registro oficial de cada país (SENASA, SENAVE, SAG, ICA, entre outras). Qualquer pessoa pode enviar a foto de um rótulo para saber se o produto é original ou falsificado."),
+"Vigila marketplaces y redes sociales, y detecta anuncios de riesgo: vendedores sin habilitación, marcas no registradas y precios fuera de mercado.": (
+ "Monitors marketplaces and social networks, and flags risky listings: unlicensed sellers, unregistered brands and off-market prices.",
+ "Monitora marketplaces e redes sociais, e detecta anúncios de risco: vendedores sem habilitação, marcas não registradas e preços fora de mercado."),
+"Lee las etiquetas publicadas y verifica registro y composición contra el registro oficial de cada país. Cualquier persona puede subir la foto de una etiqueta para saber si el producto es real o falsificado.": (
+ "Reads the labels in each listing and checks registration and composition against each country's official register. Anyone can upload a photo of a label to find out whether the product is genuine or counterfeit.",
+ "Lê os rótulos publicados e verifica registro e composição com base no registro oficial de cada país. Qualquer pessoa pode enviar a foto de um rótulo para saber se o produto é original ou falsificado."),
 "Construye el mapa del comercio ilegal por canal, marca y región: dónde se concentra, cómo se mueve y dónde conviene fiscalizar primero.": (
  "Builds the map of illegal trade by channel, brand and region: where it concentrates, how it moves and where enforcement should start.",
  "Constrói o mapa do comércio ilegal por canal, marca e região: onde se concentra, como se movimenta e onde convém fiscalizar primeiro."),
 "De la detección a la acción": ("From detection to action", "Da detecção à ação"),
-"Cada caso se entrega como expediente con evidencia estructurada —capturas, enlace, vendedor, ubicación aproximada y nivel de riesgo— listo para denuncia ante la autoridad o acción de su equipo. Ninguna alerta se convierte en acción sin validación humana.": (
- "Each case is delivered as a file with structured evidence —screenshots, link, seller, approximate location and risk level— ready to be reported to the authority or acted on by your team. No alert becomes action without human validation.",
- "Cada caso é entregue como um dossiê com evidência estruturada —capturas de tela, link, vendedor, localização aproximada e nível de risco— pronto para denúncia à autoridade ou ação da sua equipe. Nenhum alerta vira ação sem validação humana."),
-"Referencia pública · Chile": ("Public benchmark · Chile", "Referência pública · Chile"),
-"Un sistema de IA multimodal aplicado al comercio electrónico ya detecta plaguicidas no autorizados que la fiscalización tradicional no alcanza a pesquisar a tiempo.": (
- "A multimodal AI system applied to e-commerce is already detecting unauthorised pesticides that traditional enforcement cannot catch in time.",
- "Um sistema de IA multimodal aplicado ao comércio eletrônico já detecta agrotóxicos não autorizados que a fiscalização tradicional não consegue identificar a tempo."),
-"Publicaciones analizadas": ("Listings analysed", "Publicações analisadas"),
-"Alertas priorizadas": ("Prioritised alerts", "Alertas priorizados"),
-"Publicaciones por hora": ("Listings per hour", "Publicações por hora"),
-"Revisión manual evitada": ("Manual review avoided", "Revisão manual evitada"),
-"+232.000": ("+232,000", "+232.000"),
-"4.634": ("4,634", "4.634"),
-"~10.000": ("~10,000", "~10.000"),
-"38.000 h": ("38,000 h", "38.000 h"),
-"Cifras reportadas públicamente (junio 2026). Como referencia sectorial, el mercado ilegal de fitosanitarios se estima en ~20% en Brasil (~USD 2.000 millones/año) y ~14% en Europa.": (
- "Publicly reported figures (June 2026). As an industry benchmark, the illegal crop-protection market is estimated at ~20% in Brazil (~USD 2 billion/year) and ~14% in Europe.",
- "Números divulgados publicamente (junho de 2026). Como referência setorial, o mercado ilegal de defensivos agrícolas é estimado em ~20% no Brasil (~USD 2 bilhões/ano) e ~14% na Europa."),
+"Cada caso se entrega como expediente con evidencia estructurada: capturas, enlace, vendedor, ubicación aproximada y nivel de riesgo, listo para denuncia ante la autoridad o acción de su equipo. Ninguna alerta se convierte en acción sin validación humana.": (
+ "Each case is delivered as a case file with structured evidence: screenshots, link, seller, approximate location and risk level, ready to be reported to the authority or acted on by your team. No alert becomes action without human validation.",
+ "Cada caso é entregue como um dossiê com evidência estruturada: capturas de tela, link, vendedor, localização aproximada e nível de risco, pronto para denúncia à autoridade ou ação da sua equipe. Nenhum alerta vira ação sem validação humana."),
 "Piloto de 3 a 6 meses, con KPIs y criterios de éxito definidos de antemano.": (
  "A 3- to 6-month pilot, with KPIs and success criteria agreed upfront.",
  "Piloto de 3 a 6 meses, com KPIs e critérios de sucesso definidos previamente."),
@@ -343,10 +349,10 @@ T = {
  "Um especialista regulatório certificado revisa os pontos críticos: estudos toxicológicos, dados de resíduos, adequação aos requisitos GLP/OECD e coerência do processo."),
 "Paso 3 · Tú": ("Step 3 · You", "Passo 3 · Você"),
 "Tú decides": ("You decide", "Você decide"),
-"Recibes en tu dashboard el expediente validado, listo para presentar ante el SAG u organismo competente. Apruebas con un clic y la plataforma gestiona el seguimiento.": (
- "You receive the validated file in your dashboard, ready to file with SAG or the relevant authority. You approve with one click and the platform handles the follow-up.",
- "Você recebe no seu painel o processo validado, pronto para protocolar junto ao órgão competente. Aprova com um clique e a plataforma cuida do acompanhamento."),
-"Garantía de calidad HITL": ("HITL quality guarantee", "Garantia de qualidade HITL"),
+"Recibes en tu dashboard el expediente validado, listo para presentar ante la autoridad regulatoria de cada país. Apruebas con un clic y la plataforma gestiona el seguimiento.": (
+ "You receive the validated file in your dashboard, ready to file with the regulatory authority in each country. You approve with one click and the platform handles the follow-up.",
+ "Você recebe no seu painel o processo validado, pronto para protocolar junto à autoridade regulatória de cada país. Aprova com um clique e a plataforma cuida do acompanhamento."),
+"Garantía de calidad Human in the Loop (HITL)": ("Human-in-the-Loop (HITL) quality guarantee", "Garantia de qualidade Human in the Loop (HITL)"),
 "Ningún dossier sale de la plataforma sin la revisión de un experto. Este modelo de supervisión humana no solo aumenta la tasa de aprobación regulatoria, sino que garantiza que siempre hay un profesional responsable de cada expediente.": (
  "No dossier leaves the platform without expert review. This human-supervision model not only raises the regulatory approval rate, it guarantees there is always a professional accountable for every file.",
  "Nenhum dossiê sai da plataforma sem a revisão de um especialista. Esse modelo de supervisão humana não só aumenta a taxa de aprovação regulatória, como garante que sempre há um profissional responsável por cada processo."),
@@ -354,13 +360,26 @@ T = {
 # ══════════════════════════ Security ══════════════════════════
 "Seguridad Enterprise": ("Enterprise Security", "Segurança Enterprise"),
 "Tus datos regulatorios, protegidos al máximo nivel.": ("Your regulatory data, protected at the highest level.", "Seus dados regulatórios, protegidos no mais alto nível."),
-"Los expedientes de registro contienen información técnica y comercial sensible. La plataforma fue diseñada desde el inicio con seguridad enterprise.": (
- "Registration files contain sensitive technical and commercial information. The platform was designed with enterprise-grade security from day one.",
- "Os processos de registro contêm informações técnicas e comerciais sensíveis. A plataforma foi projetada desde o início com segurança enterprise."),
-"Cifrado extremo a extremo": ("End-to-end encryption", "Criptografia de ponta a ponta"),
-"Cifrado de extremo a extremo. Tu información técnica no entrena modelos ni se comparte.": (
- "End-to-end encryption. Your technical information never trains models and is never shared.",
- "Criptografia de ponta a ponta. Suas informações técnicas não treinam modelos nem são compartilhadas."),
+"Los expedientes de registro contienen información técnica y comercial sensible. Por eso la seguridad fue parte del diseño de la plataforma desde el primer día.": (
+ "Registration files contain sensitive technical and commercial information. That is why security has been part of the platform's design from day one.",
+ "Os processos de registro contêm informações técnicas e comerciais sensíveis. Por isso a segurança faz parte do projeto da plataforma desde o primeiro dia."),
+"Certificación": ("Certification", "Certificação"),
+"Internacional, prevista para 2027": ("International, planned for 2027", "Internacional, prevista para 2027"),
+"Cumplimiento y certificaciones": ("Compliance and certifications", "Conformidade e certificações"),
+"Preparada para el GDPR, con acuerdo de tratamiento de datos (DPA) disponible. Certificación ISO 27001 prevista para 2027.": ("GDPR-ready, with a data processing agreement (DPA) available. ISO 27001 certification planned for 2027.", "Preparada para o GDPR, com acordo de tratamento de dados (DPA) disponível. Certificação ISO 27001 prevista para 2027."),
+"Lista para la normativa europea": ("Ready for EU data rules", "Pronta para a norma europeia"),
+"Nube de Amazon": ("Amazon cloud", "Nuvem da Amazon"),
+"Datos siempre cifrados": ("Data always encrypted", "Dados sempre criptografados"),
+"99,9% del tiempo en línea": ("Online 99.9% of the time", "99,9% do tempo no ar"),
+"Trazabilidad": ("Traceability", "Rastreabilidade"),
+"Registro de cada cambio": ("Every change on record", "Registro de cada alteração"),
+"Privacidad": ("Privacy", "Privacidade"),
+"Infraestructura": ("Infrastructure", "Infraestrutura"),
+"Cifrado": ("Encryption", "Criptografia"),
+"Disponibilidad": ("Availability", "Disponibilidade"),
+"Cifrado de extremo a extremo (AES-256 en reposo y TLS 1.3 en tránsito). Tu información técnica no entrena modelos ni se comparte.": (
+ "End-to-end encryption (AES-256 at rest and TLS 1.3 in transit). Your technical information does not train models and is not shared.",
+ "Criptografia de ponta a ponta (AES-256 em repouso e TLS 1.3 em trânsito). Suas informações técnicas não treinam modelos nem são compartilhadas."),
 "Aislamiento de datos por cliente": ("Per-client data isolation", "Isolamento de dados por cliente"),
 "Arquitectura multi-tenant con aislamiento estricto: los datos de tu empresa nunca están accesibles para otros clientes. Ambiente de producción separado del de pruebas.": (
  "Multi-tenant architecture with strict isolation: your company's data is never accessible to other clients. Production environment kept separate from testing.",
@@ -370,47 +389,43 @@ T = {
  "Define granular permissions per team: the regulatory team sees dossiers, the commercial team only registration statuses. Nobody accesses what isn't theirs.",
  "Defina permissões granulares por equipe: a área regulatória vê os dossiês, a área comercial apenas os status de registro. Ninguém acessa o que não lhe compete."),
 "Audit trail inmutable": ("Immutable audit trail", "Trilha de auditoria imutável"),
-"Cada acción queda registrada: quién accedió, qué modificó y cuándo. El log es inmutable y puede exportarse para auditorías regulatorias o inspecciones de autoridades.": (
- "Every action is logged: who accessed it, what they changed and when. The log is immutable and can be exported for regulatory audits or authority inspections.",
- "Cada ação fica registrada: quem acessou, o que alterou e quando. O log é imutável e pode ser exportado para auditorias regulatórias ou inspeções das autoridades."),
+"Cada acción queda registrada: quién accedió, qué modificó y cuándo. El log es inmutable, sigue los principios de trazabilidad GLP/OECD (GxP) y puede exportarse para auditorías regulatorias o inspecciones de autoridades.": (
+ "Every action is logged: who accessed it, what they changed and when. The log is immutable, follows GLP/OECD (GxP) traceability principles and can be exported for regulatory audits or authority inspections.",
+ "Cada ação fica registrada: quem acessou, o que alterou e quando. O log é imutável, segue os princípios de rastreabilidade GLP/OECD (GxP) e pode ser exportado para auditorias regulatórias ou inspeções das autoridades."),
 "Autenticación multifactor (MFA)": ("Multi-factor authentication (MFA)", "Autenticação multifator (MFA)"),
 "Acceso seguro con autenticación en dos pasos obligatoria para todos los usuarios. Compatible con TOTP (Google Authenticator, Authy) y llaves de seguridad FIDO2.": (
  "Secure access with mandatory two-step authentication for all users. Compatible with TOTP (Google Authenticator, Authy) and FIDO2 security keys.",
  "Acesso seguro com autenticação em duas etapas obrigatória para todos os usuários. Compatível com TOTP (Google Authenticator, Authy) e chaves de segurança FIDO2."),
 "Alta disponibilidad y respaldo": ("High availability and backups", "Alta disponibilidade e backup"),
-"Alojada en AWS con réplicas regionales y respaldos automáticos, para continuidad operativa sobre infraestructura de nivel mundial.": (
- "Hosted on AWS with regional replicas and automatic backups, for operational continuity on world-class infrastructure.",
- "Hospedada na AWS com réplicas regionais e backups automáticos, para continuidade operacional sobre infraestrutura de nível mundial."),
+"Alojada en AWS en varias zonas de disponibilidad (Multi-AZ), con réplicas regionales y respaldos automáticos. Disponibilidad del 99,9% garantizada por SLA.": (
+ "Hosted on AWS across multiple availability zones (Multi-AZ), with regional replicas and automatic backups. 99.9% availability guaranteed by SLA.",
+ "Hospedada na AWS em várias zonas de disponibilidade (Multi-AZ), com réplicas regionais e backups automáticos. Disponibilidade de 99,9% garantida por SLA."),
 "Trazabilidad completa": ("Full traceability", "Rastreabilidade completa"),
 "Multi-tenant seguro": ("Secure multi-tenant", "Multi-tenant seguro"),
 "Mínimo privilegio": ("Least privilege", "Privilégio mínimo"),
-"Trazabilidad GxP": ("GxP traceability", "Rastreabilidade GxP"),
-"Trazabilidad total": ("Full traceability", "Rastreabilidade total"),
 "Conformidad": ("Compliance", "Conformidade"),
 "Auditoría periódica (trimestral)": ("Periodic audit (quarterly)", "Auditoria periódica (trimestral)"),
-"Auditoría técnica": ("Technical audit", "Auditoria técnica"),
-"Uptime 99.9%": ("99.9% uptime", "Uptime de 99,9%"),
-"SLA garantizado": ("Guaranteed SLA", "SLA garantido"),
-"DPA disponible": ("DPA available", "DPA disponível"),
 "Trimestral": ("Quarterly", "Trimestral"),
 
 # ══════════════════════════ Coverage ══════════════════════════
 "Dónde llegamos": ("Where we operate", "Onde atuamos"),
-"Registros Regulatorios": ("Regulatory Registrations", "Registros Regulatórios"),
+"Dónde": ("Where we", "Onde"),
+"operamos.": ("operate.", "atuamos."),
+"Registros Regulatorios": ("Regulatory registrations", "Registros Regulatórios"),
 "Operamos en los principales mercados de Latinoamérica con conocimiento profundo de cada organismo regulador. Mismos agentes, múltiples jurisdicciones.": (
  "We operate in Latin America's main markets with deep knowledge of each regulatory body. Same agents, multiple jurisdictions.",
  "Atuamos nos principais mercados da América Latina com conhecimento profundo de cada órgão regulador. Mesmos agentes, múltiplas jurisdições."),
-"Organismos reguladores": ("Regulatory bodies", "Órgãos reguladores"),
 "Normativas monitoreadas": ("Regulations monitored", "Normas monitoradas"),
 "Países activos": ("Active countries", "Países ativos"),
-"Monitoreo 24/7 automatizado": ("Automated 24/7 monitoring", "Monitoramento 24/7 automatizado"),
+"Monitoreo automatizado": ("Automated monitoring", "Monitoramento automatizado"),
+"<2% errores documentales": ("<2% document errors", "<2% de erros documentais"),
+">90% tasa de aprobación": (">90% approval rate", ">90% de taxa de aprovação"),
+"30+ idiomas": ("30+ languages", "30+ idiomas"),
 "País / Autoridad": ("Country / Authority", "País / Autoridade"),
 "Estado": ("Status", "Status"),
-"Activo": ("Active", "Ativo"),
 "En preparación": ("In preparation", "Em preparação"),
-"En roadmap 2026": ("On 2026 roadmap", "No roadmap 2026"),
-"SAG — Servicio Agrícola y Ganadero": ("SAG — Chilean Agricultural and Livestock Service", "SAG — Serviço Agrícola e Pecuário do Chile"),
-"ICA — Instituto Colombiano Agropecuario": ("ICA — Colombian Agricultural Institute", "ICA — Instituto Colombiano Agropecuário"),
+"SAG, Servicio Agrícola y Ganadero": ("SAG, Chilean Agricultural and Livestock Service", "SAG, Servicio Agrícola y Ganadero (Chile)"),
+"ICA, Instituto Colombiano Agropecuario": ("ICA, Colombian Agricultural Institute", "ICA, Instituto Colombiano Agropecuário"),
 "Todos los países": ("All countries", "Todos os países"),
 "7 jurisdicciones": ("7 jurisdictions", "7 jurisdições"),
 "mercados LATAM": ("LATAM markets", "mercados da América Latina"),
@@ -422,7 +437,7 @@ T = {
  "Walk through real registration cases and see how each agent does the heavy lifting, step by step.",
  "Percorra casos reais de registro e veja como cada agente faz o trabalho pesado, passo a passo."),
 "Estrategia regulatoria y monitoreo de cambios normativos / LMR": (
- "Regulatory strategy and monitoring of regulatory changes / MRLs",
+ "Regulatory strategy and monitoring of rule and MRL changes",
  "Estratégia regulatória e monitoramento de mudanças normativas / LMR"),
 "Modelamiento QSAR y read-across de toxicidad": ("QSAR modelling and toxicity read-across", "Modelagem QSAR e read-across de toxicidade"),
 "Generación de documentos regulatorios": ("Regulatory document generation", "Geração de documentos regulatórios"),
@@ -430,20 +445,20 @@ T = {
 
 # ══════════════════════════ Form / footer ══════════════════════════
 "Obtén tu demo personalizada": ("Get your personalised demo", "Solicite sua demo personalizada"),
-"Muéstranos tu producto y te mostramos cómo la plataforma gestiona su registro completo. Demo en vivo con un experto regulatorio en menos de 48 horas.": (
- "Show us your product and we'll show you how the platform handles its full registration. Live demo with a regulatory expert within 48 hours.",
- "Mostre-nos o seu produto e mostramos como a plataforma conduz o registro completo. Demo ao vivo com um especialista regulatório em menos de 48 horas."),
+"Cuéntanos sobre tu producto y te mostramos cómo la plataforma gestiona su registro completo. Demo en vivo con un experto regulatorio en menos de 48 horas.": (
+ "Tell us about your product and we'll show you how the platform handles its full registration. Live demo with a regulatory expert within 48 hours.",
+ "Conte-nos sobre o seu produto e mostramos como a plataforma conduz o registro completo. Demo ao vivo com um especialista regulatório em menos de 48 horas."),
 "Nombre *": ("Name *", "Nome *"),
 "Cargo *": ("Job title *", "Cargo *"),
 "Empresa *": ("Company *", "Empresa *"),
 "Correo corporativo *": ("Work email *", "E-mail corporativo *"),
 "Países": ("Countries", "Países"),
-"Te contactamos en menos de 48 horas hábiles. Sin compromisos.": (
- "We'll contact you within 48 business hours. No commitment.",
- "Entramos em contato em menos de 48 horas úteis. Sem compromisso."),
-"📅 Agendar demo en el calendario": ("📅 Book a demo in the calendar", "📅 Agendar demo no calendário"),
+"Respuesta en menos de 48 h hábiles": ("Reply within 48 business hours", "Resposta em até 48 horas úteis"),
+"Sin compromiso": ("No commitment", "Sem compromisso"),
+"o": ("or", "ou"),
+"Agendar demo en el calendario": ("Book a demo via the calendar", "Agendar demo no calendário"),
 "✓ Abrimos tu correo con la solicitud lista. Envíala y te contactamos para coordinar la demo.": (
- "✓ We opened your email client with the request ready. Send it and we'll contact you to arrange the demo.",
+ "✓ We've opened your email client with the request ready. Send it and we'll contact you to arrange the demo.",
  "✓ Abrimos seu e-mail com a solicitação pronta. Envie-a e entraremos em contato para agendar a demo."),
 "© 2026 Grupo Regulatorio SpA · info@gruporegulatorio.cl · +56 9 8144 0854": (
  "© 2026 Grupo Regulatorio SpA · info@gruporegulatorio.cl · +56 9 8144 0854",
@@ -468,8 +483,8 @@ T = {
 "Documentación": ("Documentation", "Documentação"),
 "Compliance": ("Compliance", "Compliance"),
 "Abrir menú": ("Open menu", "Abrir menu"),
-"Tu nombre": ("Your name", "Your name"),
-"Director regulatorio...": ("Regulatory director...", "Diretor regulatório..."),
+"Tu nombre": ("Your name", "Seu nome"),
+"Director regulatorio...": ("Head of Regulatory Affairs...", "Diretor regulatório..."),
 "Nombre de tu empresa": ("Your company name", "Nome da sua empresa"),
 "tu@empresa.com": ("you@company.com", "voce@empresa.com"),
 "Reproducir COMPASS + SCOUT": ("Play COMPASS + SCOUT", "Reproduzir COMPASS + SCOUT"),
@@ -520,15 +535,15 @@ T = {
 
 # ══════════════════════════ Meta / SEO ══════════════════════════
 T.update({
-"RegulatorIA — Registro de Agroquímicos AI-Native": (
- "RegulatorIA — AI-Native Agrochemical Registration",
- "RegulatorIA — Registro de Agroquímicos AI-Native"),
-"Plataforma AI-native para el registro de agroquímicos y la vigilancia del comercio ilegal en Chile y LATAM. 13 agentes de IA, validación HITL por expertos y seguridad enterprise.": (
- "AI-native platform for agrochemical registration and illegal-trade surveillance in Chile and LATAM. 13 AI agents, HITL expert validation and enterprise-grade security.",
- "Plataforma AI-native para o registro de agroquímicos e a vigilância do comércio ilegal no Chile e América Latina. 13 agentes de IA, validação HITL e segurança enterprise."),
-"RegulatorIA — 13 agentes de IA para el registro de agroquímicos en LATAM": (
- "RegulatorIA — 13 AI agents for agrochemical registration in LATAM",
- "RegulatorIA — 13 agentes de IA para o registro de agroquímicos na América Latina"),
+"RegulatorIA | Registro de Agroquímicos AI-Native": (
+ "RegulatorIA | AI-Native Agrochemical Registration",
+ "RegulatorIA | Registro de Agroquímicos AI-Native"),
+"Plataforma AI-native para el registro de agroquímicos y la vigilancia del comercio ilegal en Chile y LATAM. 13 agentes de IA, validación por expertos regulatorios y seguridad de primer nivel.": (
+ "AI-native platform for agrochemical registration and illegal-trade surveillance in Chile and LATAM. 13 AI agents, validation by regulatory experts and top-tier security.",
+ "Plataforma AI-native para o registro de agroquímicos e a vigilância do comércio ilegal no Chile e América Latina. 13 agentes de IA, validação por especialistas regulatórios e segurança de primeira linha."),
+"RegulatorIA, 13 agentes de IA para el registro de agroquímicos en LATAM": (
+ "RegulatorIA, 13 AI agents for agrochemical registration in LATAM",
+ "RegulatorIA, 13 agentes de IA para o registro de agroquímicos na América Latina"),
 
 # ══════════════════════════ Dashboard: table headers ══════════════════════════
 "COMPASS · Estrategia regulatoria por país": ("COMPASS · Regulatory strategy by country", "COMPASS · Estratégia regulatória por país"),
@@ -550,20 +565,23 @@ T.update({
 "Vigilancia post-registro": ("Post-registration monitoring", "Vigilância pós-registro"),
 "Actualizado hace 3 min": ("Updated 3 min ago", "Atualizado há 3 min"),
 "últimos 30 días": ("last 30 days", "últimos 30 dias"),
-"⚙ Configuración": ("⚙ Settings", "⚙ Configurações"),
 "+ Nuevo dossier": ("+ New dossier", "+ Novo dossiê"),
-"Ana Araya — Regulatory Affairs ▾": ("Ana Araya — Regulatory Affairs ▾", "Ana Araya — Regulatory Affairs ▾"),
+"Ana Araya, Regulatory Affairs ▾": ("Ana Araya, Regulatory Affairs ▾", "Ana Araya, Regulatory Affairs ▾"),
 
 # ══════════════════════════ Dashboard: KPIs and columns ══════════════════════════
-"Resumen Global": ("Global Summary", "Resumo Global"),
-"Dossiers Activos": ("Active Dossiers", "Dossiês Ativos"),
-"Tiempo Ahorrado": ("Time Saved", "Tempo Economizado"),
+"Resumen Global": ("Global summary", "Resumo Global"),
+"Una vez registrado tu producto,": ("Once your product is registered,", "Depois que o seu produto for registrado,"),
+"RADAR, READER y ATLAS": ("RADAR, READER and ATLAS", "RADAR, READER e ATLAS"),
+"vigilan que no compita con el ilegal.": ("keep watch so it does not have to compete with illegal products.", "vigiam para que ele não concorra com o ilegal."),
+"Sigue bajando para conocerlos": ("Keep scrolling to meet them", "Role a página para conhecê-los"),
+"Dossiers Activos": ("Active dossiers", "Dossiês Ativos"),
+"Tiempo Ahorrado": ("Time saved", "Tempo Economizado"),
 "ROI Estimado": ("Estimated ROI", "ROI Estimado"),
 "Retorno sobre inversión": ("Return on investment", "Retorno sobre investimento"),
-"Progreso General": ("Overall Progress", "Progresso Geral"),
+"Progreso General": ("Overall progress", "Progresso Geral"),
 "Países analizados": ("Countries analysed", "Países analisados"),
 "Requisitos detectados": ("Requirements detected", "Requisitos detectados"),
-"Vía óptima": ("Optimal route", "Rota ideal"),
+"Vía óptima": ("Optimal pathway", "Rota ideal"),
 "ruta más corta": ("shortest route", "rota mais curta"),
 "Tiempo estimado": ("Estimated time", "Tempo estimado"),
 "Modelos QSAR": ("QSAR models", "Modelos QSAR"),
@@ -594,7 +612,7 @@ T.update({
 "dossiers": ("dossiers", "dossiês"),
 "Hallazgos críticos": ("Critical findings", "Achados críticos"),
 "bloquean envío": ("block filing", "bloqueiam o protocolo"),
-"Advertencias": ("Warnings", "Advertências"),
+"Advertencias": ("Warnings", "Avisos"),
 "revisar": ("to review", "revisar"),
 "Conformidad": ("Compliance", "Conformidade"),
 "reglas aplicadas": ("rules applied", "regras aplicadas"),
@@ -610,7 +628,6 @@ T.update({
 "este mes": ("this month", "este mês"),
 "este año": ("this year", "este ano"),
 "Idiomas": ("Languages", "Idiomas"),
-"Firma certificada": ("Certified signature", "Assinatura certificada"),
 "Países": ("Countries", "Países"),
 "expansión": ("expansion", "expansão"),
 "Re-uso de dossier": ("Dossier reuse", "Reaproveitamento de dossiê"),
@@ -665,7 +682,7 @@ T.update({
 "Equivalencias": ("Equivalences", "Equivalências"),
 "Adaptación": ("Adaptation", "Adaptação"),
 "Adaptación etiqueta": ("Label adaptation", "Adaptação de rótulo"),
-"Vía regulatoria": ("Regulatory route", "Rota regulatória"),
+"Vía regulatoria": ("Regulatory pathway", "Rota regulatória"),
 "Requisitos clave": ("Key requirements", "Requisitos-chave"),
 "Estudios GLP": ("GLP studies", "Estudos GLP"),
 "Datos eco-tox": ("Eco-tox data", "Dados eco-tox"),
@@ -675,13 +692,13 @@ T.update({
 "Identidad química": ("Chemical identity", "Identidade química"),
 "Propiedades físico-químicas": ("Physicochemical properties", "Propriedades físico-químicas"),
 "Residuos y LMR": ("Residues and MRLs", "Resíduos e LMR"),
-"Residuos — método analítico": ("Residues — analytical method", "Resíduos — método analítico"),
+"Residuos, método analítico": ("Residues, analytical method", "Resíduos, método analítico"),
 "Etiqueta y FDS": ("Label and SDS", "Rótulo e FISPQ"),
 "Etiqueta": ("Label", "Rótulo"),
-"Etiqueta — pictogramas GHS": ("Label — GHS pictograms", "Rótulo — pictogramas GHS"),
+"Etiqueta, pictogramas GHS": ("Label, GHS pictograms", "Rótulo, pictogramas GHS"),
 "Etiquetas GHS": ("GHS labels", "Rótulos GHS"),
 "Etiqueta GHS": ("GHS label", "Rótulo GHS"),
-"Ficha de Datos de Seguridad": ("Safety Data Sheet", "Ficha de Informação de Segurança"),
+"Ficha de Datos de Seguridad": ("Safety Data Sheet", "Ficha de Informações de Segurança"),
 "Ficha técnica": ("Technical data sheet", "Ficha técnica"),
 "Fichas técnicas": ("Technical data sheets", "Fichas técnicas"),
 "Resumen toxicológico": ("Toxicology summary", "Resumo toxicológico"),
@@ -691,12 +708,8 @@ T.update({
 "LOQ no cumple LMR objetivo": ("LOQ does not meet target MRL", "LOQ não atende ao LMR alvo"),
 "Pictograma GHS07 ausente": ("GHS07 pictogram missing", "Pictograma GHS07 ausente"),
 "vs. guía SAG": ("vs. SAG guidance", "vs. guia SAG"),
-"Análisis QSAR": ("QSAR analysis", "Análise QSAR"),
 "QSAR automático": ("Automatic QSAR", "QSAR automático"),
-"Chequeo normativo": ("Regulatory check", "Verificação normativa"),
 "Doc. regulatorio": ("Regulatory doc.", "Doc. regulatório"),
-"Dossier automático": ("Automatic dossier", "Dossiê automático"),
-"Aprobación en 1 clic": ("One-click approval", "Aprovação em 1 clique"),
 "Equivalencia técnica": ("Technical equivalence", "Equivalência técnica"),
 "Registro por similitud": ("Registration by similarity", "Registro por similaridade"),
 "Traducción + LMR local": ("Translation + local MRL", "Tradução + LMR local"),
@@ -704,7 +717,7 @@ T.update({
 "Renovación": ("Renewal", "Renovação"),
 "En curso": ("In progress", "Em andamento"),
 "en curso": ("in progress", "em andamento"),
-"En proceso": ("In process", "Em processo"),
+"En proceso": ("In progress", "Em processo"),
 "En revisión": ("Under review", "Em revisão"),
 "Completo ✓": ("Complete ✓", "Completo ✓"),
 "Aprobado ✓": ("Approved ✓", "Aprovado ✓"),
@@ -712,7 +725,7 @@ T.update({
 "Conforme": ("Compliant", "Conforme"),
 "Generado": ("Generated", "Gerado"),
 "Respondida": ("Answered", "Respondida"),
-"Evaluar": ("Evaluate", "Avaliar"),
+"Evaluar": ("To assess", "Avaliar"),
 "Viable": ("Viable", "Viável"),
 "Rápida": ("Rapid", "Rápida"),
 "Negativo": ("Negative", "Negativo"),
@@ -724,9 +737,9 @@ T.update({
 "Carcinogenicidad": ("Carcinogenicity", "Carcinogenicidade"),
 "Daphnia magna (EC50)": ("Daphnia magna (EC50)", "Daphnia magna (EC50)"),
 "Biodegradabilidad": ("Biodegradability", "Biodegradabilidade"),
-"Eco-tox — Daphnia": ("Eco-tox — Daphnia", "Eco-tox — Daphnia"),
+"Eco-tox, Daphnia": ("Eco-tox, Daphnia", "Eco-tox, Daphnia"),
 "Sustitución Cl→F": ("Cl→F substitution", "Substituição Cl→F"),
-"Bioisóstero amida": ("Amide bioisostere", "Bioisóstero amida"),
+"Bioisóstero amida": ("Amide bioisostere", "Bioisóstero de amida"),
 "Grupo metoxi": ("Methoxy group", "Grupo metoxi"),
 "Anillo saturado": ("Saturated ring", "Anel saturado"),
 "Cadena ramificada": ("Branched chain", "Cadeia ramificada"),
@@ -753,7 +766,6 @@ T.update({
 "horas este mes": ("hours this month", "horas este mês"),
 "listo para QC": ("ready for QC", "pronto para QC"),
 "4x más rápido": ("4x faster", "4x mais rápido"),
-"4x más rápido.": ("4x faster.", "4x mais rápido."),
 "5x más rápido": ("5x faster", "5x mais rápido"),
 "País por país": ("Country by country", "País a país"),
 "Paralelo": ("Parallel", "Paralelo"),
@@ -781,12 +793,8 @@ T.update({
 "🇺🇾 Uruguay · MGAP": ("🇺🇾 Uruguay · MGAP", "🇺🇾 Uruguai · MGAP"),
 "🇧🇷 Brasil": ("🇧🇷 Brazil", "🇧🇷 Brasil"),
 "🇨🇱 Chile": ("🇨🇱 Chile", "🇨🇱 Chile"),
-"🌿 Regulator.IA": ("🌿 Regulator.IA", "🌿 Regulator.IA"),
-"🏠 Inicio": ("🏠 Home", "🏠 Início"),
+"Inicio": ("Home", "Início"),
 "🔒 app.regulatoria.cl/dashboard": ("🔒 app.regulatoria.cl/dashboard", "🔒 app.regulatoria.cl/dashboard"),
-"Dashboard interactivo": ("Interactive dashboard", "Painel interativo"),
-"Revisión GLP/OECD": ("GLP/OECD review", "Revisão GLP/OECD"),
-"Registro regulatorio,": ("Regulatory registration,", "Registro regulatório,"),
 })
 
 T.update({f"Análogo G-{n}": (f"Analogue G-{n}", f"Análogo G-{n}")
@@ -800,8 +808,7 @@ T.update({
 "Escalabilidad": ("Scalability", "Escalabilidade"),
 "Validaciones": ("Validations", "Validações"),
 "regulatorias": ("regulatory", "regulatórias"),
-"Advertencia": ("Warning", "Advertência"),
-"Defensas IA": ("AI defences", "Defesas de IA"),
+"Advertencia": ("Warning", "Aviso"),
 "Agentes de registro": ("Registration agents", "Agentes de registro"),
 "predicha": ("predicted", "predita"),
 "dossiers": ("dossiers", "dossiês"),
@@ -810,18 +817,16 @@ T.update({
 "Eficacia local": ("Local efficacy", "Eficácia local"),
 "LMR + etiqueta": ("MRL + label", "LMR + rótulo"),
 "LMR cultivo": ("Crop MRL", "LMR da cultura"),
-"Abogados ($$$)": ("Lawyers ($$$)", "Advogados ($$$)"),
 "€50k-200k estudios": ("€50k-200k in studies", "€50k-200k em estudos"),
 "Identidad + 5 lotes": ("Identity + 5 batches", "Identidade + 5 lotes"),
 "Tox + eco-tox + residuos": ("Tox + eco-tox + residues", "Tox + eco-tox + resíduos"),
 "tox + eco-tox": ("tox + eco-tox", "tox + eco-tox"),
-"CLP/GHS 30+ idiomas": ("CLP/GHS 30+ languages", "CLP/GHS 30+ idiomas"),
 "Confidencialidad de datos técnicos": ("Technical data confidentiality", "Confidencialidade dos dados técnicos"),
 "Etiqueta Herbex 480 SC": ("Herbex 480 SC label", "Rótulo Herbex 480 SC"),
 "Etiqueta FungiPro 250 EW": ("FungiPro 250 EW label", "Rótulo FungiPro 250 EW"),
-"BINDER · Dossier Herbex 480 SC — Chile / SAG": (
- "BINDER · Herbex 480 SC dossier — Chile / SAG",
- "BINDER · Dossiê Herbex 480 SC — Chile / SAG"),
+"BINDER · Dossier Herbex 480 SC, Chile / SAG": (
+ "BINDER · Herbex 480 SC dossier, Chile / SAG",
+ "BINDER · Dossiê Herbex 480 SC, Chile / SAG"),
 "↑ +6 vs. mes anterior": ("↑ +6 vs. last month", "↑ +6 vs. mês anterior"),
 "-90% errores": ("-90% errors", "-90% erros"),
 "-80% costo": ("-80% cost", "-80% custo"),
@@ -845,7 +850,7 @@ T.update({
  "In silico toxicology and QSAR predictions (PREDICT)",
  "Toxicologia in silico e predições QSAR (PREDICT)"),
 "Diseño generativo de moléculas Safe-by-Design (GENESIS)": (
- "Generative Safe-by-Design molecule design (GENESIS)",
+ "Generative molecule design, safe-by-design (GENESIS)",
  "Design generativo de moléculas Safe-by-Design (GENESIS)"),
 "Monitoreo de cambios normativos y LMR (SCOUT)": (
  "Monitoring of regulatory changes and MRLs (SCOUT)",
@@ -858,7 +863,7 @@ T.update({
  "Revisão automática GLP/OECD (AUDITOR)"),
 "Defensas técnicas ante observaciones de la autoridad (DEFENDER)": (
  "Technical defences against authority objections (DEFENDER)",
- "Defesas técnicas contra exigências da autoridade (DEFENDER)"),
+ "Defesas técnicas em resposta às exigências da autoridade (DEFENDER)"),
 "Generación de FDS y etiquetas GHS/CLP (SCRIBE)": (
  "SDS and GHS/CLP label generation (SCRIBE)",
  "Geração de FISPQ e rótulos GHS/CLP (SCRIBE)"),
@@ -880,7 +885,7 @@ T.update({"Inicio": ("Home", "Início")})
 T.update({
 "tu registro de agroquímicos.": ("your agrochemical registration.", "o seu registro de agroquímicos."),
 "Estrategia regulatoria": ("Regulatory strategy", "Estratégia regulatória"),
-"Toxicología in-silico": ("In-silico toxicology", "Toxicologia in-silico"),
+"Toxicología in silico": ("In silico toxicology", "Toxicologia in silico"),
 "Moléculas safe-by-design": ("Safe-by-design molecules", "Moléculas safe-by-design"),
 "Vigilancia 24/7": ("24/7 monitoring", "Vigilância 24/7"),
 "Armado del dossier": ("Dossier assembly", "Montagem do dossiê"),
@@ -899,11 +904,11 @@ T.update({
 "El Laboratorio": ("The Lab", "O Laboratório"),
 "El Arquitecto": ("The Architect", "O Arquiteto"),
 "El Espía": ("The Spy", "O Espião"),
-"El Organizador": ("The Organizer", "O Organizador"),
+"El Organizador": ("The Organiser", "O Organizador"),
 "El Revisor": ("The Reviewer", "O Revisor"),
 "El Abogado": ("The Lawyer", "O Advogado"),
 "El Publicador": ("The Publisher", "O Publicador"),
-"El Globalizador": ("The Globalizer", "O Globalizador"),
+"El Globalizador": ("The Globaliser", "O Globalizador"),
 "El Centinela": ("The Sentinel", "O Sentinela"),
 "El Orquestador": ("The Orchestrator", "O Orquestrador"),
 "Los 13 agentes": ("All 13 agents", "Os 13 agentes"),
@@ -911,36 +916,36 @@ T.update({
 "El Vigía": ("The Watcher", "O Vigia"),
 "El Inspector": ("The Inspector", "O Inspetor"),
 "El Cartógrafo": ("The Cartographer", "O Cartógrafo"),
-"Rastrea marketplaces, redes sociales y grupos de mensajería en busca de oferta ilegal o falsificada.": (
- "Tracks marketplaces, social networks and messaging groups for illegal or counterfeit offers.",
- "Rastreia marketplaces, redes sociais e grupos de mensagens em busca de oferta ilegal ou falsificada."),
+"Rastrea marketplaces y redes sociales en busca de oferta ilegal o falsificada.": (
+ "Tracks marketplaces and social networks for illegal or counterfeit listings.",
+ "Rastreia marketplaces e redes sociais em busca de oferta ilegal ou falsificada."),
 "Verifica la etiqueta contra el registro oficial: basta una foto para saber si el producto es real.": (
  "Checks the label against the official register: a single photo tells you whether the product is genuine.",
- "Verifica o rótulo contra o registro oficial: basta uma foto para saber se o produto é original."),
+ "Verifica o rótulo com base no registro oficial: basta uma foto para saber se o produto é original."),
 "Mapea el comercio ilegal por canal, marca y región para dirigir la fiscalización.": (
  "Maps the illegal trade by channel, brand and region to target enforcement.",
  "Mapeia o comércio ilegal por canal, marca e região para direcionar a fiscalização."),
-"Monitoreo en tiempo real": ("Real-time monitoring", "Monitoramento em tempo real"),
+
 "Verificación por foto": ("Photo verification", "Verificação por foto"),
 "Mapa de puntos calientes": ("Hotspot map", "Mapa de pontos críticos"),
-"Marketplaces y redes": ("Marketplaces & social", "Marketplaces e redes"),
+"Marketplaces y redes": ("Marketplaces & social media", "Marketplaces e redes"),
 "Verificación de etiquetas": ("Label verification", "Verificação de rótulos"),
 "Mapa del comercio ilegal": ("Illegal-trade map", "Mapa do comércio ilegal"),
 "Define la estrategia regulatoria y arma el mapa de requisitos exigidos por cada autoridad.": (
  "Defines the regulatory strategy and maps the requirements demanded by each authority.",
  "Define a estratégia regulatória e monta o mapa de requisitos exigidos por cada autoridade."),
-"Toxicología in-silico con QSAR y read-across antes de encargar un solo ensayo.": (
- "In-silico toxicology with QSAR and read-across before commissioning a single study.",
- "Toxicologia in-silico com QSAR e read-across antes de encomendar um único ensaio."),
+"Toxicología in silico con QSAR y read-across antes de encargar un solo ensayo.": (
+ "In silico toxicology with QSAR and read-across before commissioning a single study.",
+ "Toxicologia in silico com QSAR e read-across antes de encomendar um único ensaio."),
 "Propone variantes moleculares safe-by-design sobre el ingrediente activo.": (
  "Proposes safe-by-design molecular variants of the active ingredient.",
  "Propõe variantes moleculares safe-by-design sobre o ingrediente ativo."),
 "Monitorea 24/7 cambios regulatorios y de LMR en los mercados donde registras.": (
  "Monitors regulatory and MRL changes 24/7 across the markets where you register.",
  "Monitora 24/7 mudanças regulatórias e de LMR nos mercados onde você registra."),
-"Arma el dossier completo con Document AI y un panel de completitud por sección.": (
- "Assembles the full dossier with Document AI and a per-section completeness panel.",
- "Monta o dossiê completo com Document AI e um painel de completude por seção."),
+"Arma el dossier completo, clasifica cada documento y muestra qué falta en cada sección.": (
+ "Assembles the full dossier, classifies every document and shows what is missing in each section.",
+ "Monta o dossiê completo, classifica cada documento e mostra o que falta em cada seção."),
 "Valida contra GLP/OECD en tres niveles automáticos antes de que el dossier salga.": (
  "Validates against GLP/OECD across three automatic levels before the dossier goes out.",
  "Valida contra GLP/OECD em três níveis automáticos antes de o dossiê sair."),
@@ -954,14 +959,14 @@ T.update({
  "Reuses the approved dossier and harmonises it for the next country.",
  "Reaproveita o dossiê aprovado e o harmoniza para o país seguinte."),
 "Vigila licencias vigentes y avisa de vencimientos y renovaciones a tiempo.": (
- "Watches active licences and flags expiries and renewals in time.",
+ "Watches active licences and flags expiries and renewals in good time.",
  "Vigia licenças vigentes e avisa de vencimentos e renovações a tempo."),
 "Rutea cada tarea al agente que corresponde y mantiene al experto humano validando lo crítico.": (
  "Routes each task to the right agent and keeps the human expert validating what matters.",
  "Roteia cada tarefa ao agente certo e mantém o especialista humano validando o crítico."),
 "9 países · 15+ autoridades": ("9 countries · 15+ authorities", "9 países · 15+ autoridades"),
 "Menos ensayos preliminares": ("Fewer preliminary studies", "Menos ensaios preliminares"),
-"Diseño safe-by-design": ("Safe-by-design engineering", "Design safe-by-design"),
+"Diseño safe-by-design": ("Safe-by-design molecules", "Design safe-by-design"),
 "Registro multi-país": ("Multi-country registration", "Registro multipaís"),
 "100% validación HITL": ("100% HITL validation", "100% validação HITL"),
 })

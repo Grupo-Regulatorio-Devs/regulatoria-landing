@@ -9,7 +9,7 @@ a{text-decoration:none;color:inherit}
   --text:#1a2e1a;--text-dim:#5a6b52;--text-heading:#0f1a0a;
 }
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
-@keyframes gr-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@keyframes gr-unspin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(-360deg)}}@keyframes gr-glow{0%,100%{box-shadow:0 0 0 0 rgba(0,0,0,0)}3%{box-shadow:0 0 26px 6px var(--gl,rgba(123,201,80,.5))}16%{box-shadow:0 0 0 0 rgba(0,0,0,0)}}@keyframes gr-ripple{0%{opacity:0;transform:scale(.85)}4%{opacity:1;transform:scale(1)}18%{opacity:0;transform:scale(1.55)}100%{opacity:0;transform:scale(1.55)}}@keyframes gr-halo{0%{transform:scale(1);opacity:.5}100%{transform:scale(2.3);opacity:0}}@keyframes gr-packet{0%{transform:translate(0,-50%);opacity:0}12%{opacity:1}88%{opacity:1}100%{transform:translate(var(--pd,264px),-50%);opacity:0}}@keyframes gr-photo{0%,18%{opacity:1}22%,96%{opacity:0}100%{opacity:1}}@keyframes gr-breathe{0%,100%{opacity:.35}50%{opacity:.75}}
+@keyframes gr-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@keyframes gr-unspin{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}@keyframes gr-glow{0%,100%{box-shadow:0 0 0 0 rgba(0,0,0,0)}3%{box-shadow:0 0 26px 6px var(--gl,rgba(123,201,80,.5))}16%{box-shadow:0 0 0 0 rgba(0,0,0,0)}}@keyframes gr-ripple{0%{opacity:0;transform:scale(.85)}4%{opacity:1;transform:scale(1)}18%{opacity:0;transform:scale(1.55)}100%{opacity:0;transform:scale(1.55)}}@keyframes gr-halo{0%{transform:scale(1);opacity:.5}100%{transform:scale(2.3);opacity:0}}@keyframes gr-packet{0%{transform:translate(0,-50%);opacity:0}12%{opacity:1}88%{opacity:1}100%{transform:translate(var(--pd,264px),-50%);opacity:0}}@keyframes gr-photo{0%,18%{opacity:1}22%,96%{opacity:0}100%{opacity:1}}@keyframes gr-breathe{0%,100%{opacity:.35}50%{opacity:.75}}
 
 /* ══ Regulator.IA design-system tokens (Claude Design) ══
    The production :root already covered --green/--text/--border; this adds what
@@ -70,7 +70,17 @@ a{text-decoration:none;color:inherit}
   .hero-orbit{margin:-90px 0}
   .hero-agent-panel{display:none!important}
 }
-@media(max-width:520px){:root{--orb-k:.5}.hero-orbit{margin:-130px 0}}
+/* Phones and small tablets: the orbit as wide as the screen allows. Over a full
+   turn its visible content (icons + labels) spans 485px at scale 1, so
+   k = (viewport - 12px) / 485 at the narrow end of each range; the negative
+   margin, 520*(1-k)/2, removes the empty space the scaled box leaves. */
+@media(max-width:760px){:root{--orb-k:0.95}.hero-orbit{margin:-13px 0}}
+@media(max-width:520px){:root{--orb-k:0.96}.hero-orbit{margin:-10px 0}}
+@media(max-width:479px){:root{--orb-k:0.86}.hero-orbit{margin:-36px 0}}
+@media(max-width:429px){:root{--orb-k:0.8}.hero-orbit{margin:-52px 0}}
+@media(max-width:399px){:root{--orb-k:0.74}.hero-orbit{margin:-68px 0}}
+@media(max-width:374px){:root{--orb-k:0.71}.hero-orbit{margin:-75px 0}}
+@media(max-width:359px){:root{--orb-k:0.63}.hero-orbit{margin:-96px 0}}
 
 /* Without a fine pointer the orbit can't be explored: keep it spinning, no panel. */
 @media(hover:none){.hero-agent-panel{display:none!important}}
@@ -108,7 +118,6 @@ a{text-decoration:none;color:inherit}
 .dash-table-wrap{overflow-x:auto}
 /* The footer links (flex, no wrap, 592px) overflowed the mobile viewport and
    became unreachable because body has overflow-x:hidden. */
-.footer-links{flex-wrap:wrap;justify-content:center}
 
 /* ══ Language switcher ══ */
 .lang-switch{display:flex;align-items:center;gap:2px;padding:3px;
@@ -126,6 +135,10 @@ a{text-decoration:none;color:inherit}
   .lang-switch{margin:10px auto 0;justify-content:center}
   .lang-switch a{padding:8px 15px;font-size:.82rem}
 }
+/* Inside the open mobile menu the generic ".nav-links.open a" rule (padding,
+   1rem font, bottom border) is more specific and squashed the ES/EN/PT pills. */
+.nav-links.open .lang-switch{align-self:center;margin:16px auto 4px}
+.nav-links.open .lang-switch a{padding:8px 18px;font-size:.85rem;border-bottom:none;line-height:1.2}
 
 /* ══ FAQ ══ */
 .faq-section{padding:110px 0;background:var(--bg2)}
@@ -221,6 +234,15 @@ a{text-decoration:none;color:inherit}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
 .stat-num{font-size:2.8rem;font-weight:900;color:#fff}
 .stat-label{font-size:.85rem;color:rgba(255,255,255,0.7);margin-top:4px}
+/* Reconocimientos: franja clara bajo .stats (la insignia F6S trae texto negro) */
+.awards{padding:32px 0 36px;background:#f8faf6;border-bottom:1px solid var(--border);position:relative;z-index:2}
+.awards-inner{display:flex;flex-direction:column;align-items:center;gap:16px}
+.awards-label{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--text-dim)}
+.awards-list{display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center}
+.award{display:block;transition:transform .3s}
+.award:hover{transform:translateY(-2px)}
+.award img{display:block;height:52px;width:auto;max-width:100%}
+@media(max-width:560px){.award img{height:auto;width:280px}}
 .section{padding:120px 0;position:relative;z-index:2}
 .section-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(90,173,45,0.08);border:1px solid rgba(90,173,45,0.2);color:var(--green-dark);padding:6px 16px;border-radius:50px;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
 .section-title{font-size:2.8rem;font-weight:900;letter-spacing:-.03em;line-height:1.15;margin-bottom:16px;color:var(--text-heading)}
@@ -317,7 +339,8 @@ a{text-decoration:none;color:inherit}
 .chip-expert{background:rgba(90,173,45,0.08);color:var(--green-dark);border:1px solid rgba(90,173,45,0.2)}
 .chip-user{background:rgba(168,85,247,0.08);color:#6d28d9;border:1px solid rgba(168,85,247,0.2)}
 .hitl-guarantee{margin-top:64px;background:linear-gradient(135deg,rgba(43,90,20,0.04),rgba(90,173,45,0.06));border:1px solid rgba(90,173,45,0.15);border-radius:20px;padding:40px 48px;display:flex;align-items:center;gap:40px}
-.hitl-guarantee-icon{font-size:3rem;flex-shrink:0}
+.hitl-guarantee-icon{font-size:3rem;flex-shrink:0;width:96px;height:96px;border-radius:24px;display:grid;place-items:center;background:rgba(90,173,45,0.12);color:var(--green-dark)}
+.hitl-guarantee-icon svg{width:62px;height:62px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .hitl-guarantee h3{font-size:1.3rem;font-weight:800;color:var(--text-heading);margin-bottom:8px}
 .hitl-guarantee p{font-size:.92rem;color:var(--text-dim);line-height:1.7;max-width:700px}
 .hitl-stat-row{display:flex;gap:40px;margin-top:16px}
@@ -400,7 +423,7 @@ a{text-decoration:none;color:inherit}
 .dash-panel.active{display:flex;animation:dashPanelFade .35s ease}
 @keyframes dashPanelFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .tox-down{color:var(--green-dark);font-weight:700}
-.platform-features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.platform-features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
 .pf-item{display:flex;align-items:flex-start;gap:10px;padding:16px;background:rgba(90,173,45,0.04);border:1px solid rgba(90,173,45,0.1);border-radius:10px}
 .pf-icon{font-size:1.1rem;flex-shrink:0;margin-top:1px}
 .pf-text{font-size:.8rem;color:var(--text-dim);line-height:1.5}
@@ -422,7 +445,6 @@ a{text-decoration:none;color:inherit}
 .cob-lbl{font-size:.78rem;color:rgba(255,255,255,0.55);margin-top:6px}
 .countries-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:880px;margin:0 auto}
 .country-row{display:flex;align-items:center;gap:14px;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:12px;transition:background .3s,border-color .3s,transform .3s}
-.country-row:hover{background:rgba(90,173,45,0.08);border-color:rgba(90,173,45,0.25);transform:translateY(-2px)}
 .country-flag-lg{font-size:1.5rem;flex-shrink:0;width:34px;text-align:center}
 .country-info{flex:1;min-width:0}
 .country-name{font-size:.95rem;font-weight:700;color:#fff}
@@ -487,17 +509,13 @@ a{text-decoration:none;color:inherit}
 .form-group select option{background:var(--green-dark);color:#fff}
 .form-submit{width:100%;padding:14px;border-radius:10px;background:linear-gradient(135deg,var(--green),#7BC950);color:#fff;font-weight:700;font-size:1rem;border:none;cursor:pointer;transition:box-shadow .3s,transform .3s}
 .form-submit:hover{box-shadow:0 8px 30px rgba(90,173,45,0.4);transform:translateY(-2px)}
-.form-note{text-align:center;font-size:.75rem;color:rgba(255,255,255,0.5);margin-top:10px}
+.cta-box .form-note{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 22px;max-width:none;margin:14px 0 0;font-size:.8rem;line-height:1.4;font-weight:500;color:rgba(255,255,255,0.72)}
+.form-note span{display:inline-flex;align-items:center;gap:7px}
+.form-note svg{width:15px;height:15px;flex:none;fill:none;stroke:#7BC950;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .form-success{display:none;text-align:center;padding:16px;background:rgba(90,173,45,0.2);border-radius:10px;margin-top:14px;color:#7BC950;font-weight:600;font-size:.9rem}
 
 /* ── Footer ── */
-.footer{border-top:1px solid var(--border);padding:40px 0;position:relative;z-index:2;background:#fff}
-.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer-logo{font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,var(--green-dark),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.footer-links{display:flex;gap:24px}
-.footer-links a{font-size:.85rem;color:var(--text-dim);transition:color .3s}
-.footer-links a:hover{color:var(--green)}
-.footer-copy{width:100%;text-align:center;margin-top:24px;padding-top:24px;border-top:1px solid var(--border);font-size:.78rem;color:var(--text-dim)}
 .reveal{opacity:0;transform:translateY(40px)}
 .video-section{padding:100px 0;background:#f5f7f4}
 .video-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
@@ -528,7 +546,7 @@ a{text-decoration:none;color:inherit}
 .mstep{position:relative;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:26px 22px;backdrop-filter:blur(8px);transition:transform .3s,border-color .3s,background .3s}
 .mstep:hover{transform:translateY(-5px);border-color:rgba(123,201,80,0.5);background:rgba(255,255,255,0.08)}
 .mstep-num{position:absolute;top:14px;right:18px;font-size:2.6rem;font-weight:900;color:rgba(255,255,255,0.07);line-height:1}
-.mstep-h{font-size:1.05rem;font-weight:800;margin-bottom:8px}
+.mstep-h{font-size:1.05rem;font-weight:800;margin-bottom:8px;color:#fff}
 .mstep-icon{font-size:1.75rem;margin-bottom:14px}
 .mstep h4{color:#fff;font-size:1.02rem;font-weight:800;margin-bottom:8px}
 .mstep p{color:rgba(255,255,255,0.66);font-size:.85rem;line-height:1.55}
@@ -621,8 +639,8 @@ a{text-decoration:none;color:inherit}
   .security-grid{grid-template-columns:repeat(2,1fr)}
   .hitl-guarantee{flex-direction:column;text-align:center}
   .hitl-stat-row{justify-content:center}
-  .dashboard-shell{grid-template-columns:160px 1fr;height:540px}
-  .platform-features{grid-template-columns:repeat(2,1fr)}
+  .dashboard-shell{grid-template-columns:160px 1fr;height:560px}
+  .platform-features{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:768px){
   .nav-links{display:none}.nav-mobile{display:block}
@@ -642,7 +660,6 @@ a{text-decoration:none;color:inherit}
   .form-row{grid-template-columns:1fr}
   .stats-grid{grid-template-columns:repeat(2,1fr);gap:20px}
   .cta-box{padding:48px 24px}.cta-box h2{font-size:1.8rem}
-  .footer-inner{flex-direction:column;text-align:center}
   .security-grid{grid-template-columns:1fr}
   .compliance-divider{display:none}
   .hitl-guarantee{padding:28px 20px}
@@ -659,3 +676,102 @@ a{text-decoration:none;color:inherit}
   .compare-mobile{display:block}
   .compare-section{padding:80px 0}
 }
+/* In-page link targets get focus for keyboard users (main.js); no ring on the section itself. */
+section[tabindex="-1"]:focus{outline:none}
+
+/* ══ Section rhythm ══
+   Light sections alternate white / soft green with a hairline where they meet,
+   so each one reads as its own block instead of running into the next.
+   Order: awards(tint) · preview(white) · fases(tint) · comparativa(white) ·
+   comercio-ilegal(tint) · gestionado(dark) · hitl(tint) · seguridad(white) ·
+   cobertura(dark) · videos(tint) · faq(white) · demo(tint) · footer(white). */
+.platform-section,.compare-section,.security-section,.faq-section{background:#fff}
+#fases,.ilegal-section,.hitl-section,.video-section,.cta-section{background:var(--bg2);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+
+/* Dashboard sidebar: one label per phase, with the phase color as a dot. */
+.dash-section-label[class*="dsl-"]{display:flex;align-items:center;gap:6px;padding-top:8px;margin-top:4px;white-space:nowrap}
+.dash-sidebar .dash-nav-item{padding-top:4px;padding-bottom:4px}
+.dash-section-label[class*="dsl-"]::before{content:'';width:6px;height:6px;border-radius:50%;flex:none}
+.dsl-pre::before{background:#6d9bf5}.dsl-reg::before{background:#7BC950}
+.dsl-post::before{background:#f08a4b}.dsl-vig::before{background:#f0718a}
+
+/* Sidebar logo doubles as the "home" button of the dashboard demo. */
+.dash-logo[data-panel]{cursor:pointer}
+.dash-logo[data-panel]:hover{color:#a9e07f}
+
+/* Dashboard demo: only the sidebar sections are interactive. The rest is a
+   picture of the product. No hover, no hand cursor, no text selection and no
+   focus (the markup sets `inert` on .browser-bar and on the search, select and button). */
+.browser-mockup{user-select:none;-webkit-user-select:none}
+.browser-bar,.dash-main *{pointer-events:none;cursor:default}
+/* Tables are wider than their card on phones: the card itself takes the touch,
+   so it can be swiped sideways, while the cells inside stay non-interactive. */
+.dash-main .dash-table-wrap{pointer-events:auto;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.dash-section-label{cursor:default}
+
+/* Comparison: the market-surveillance agents are covered in the next section. */
+.phase-separator .ps-vig{color:#be123c!important}
+.next-row td{padding:16px 24px!important;font-size:.88rem;color:var(--text-dim);background:#fff}
+.next-row strong,.cm-next strong{color:var(--text-heading)}
+.next-row a,.cm-next a{color:#be123c;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.cm-next .cm-service{color:#be123c}
+.cm-next p{font-size:.85rem;color:var(--text-dim);line-height:1.55;margin:0}
+
+/* HITL steps: line icons in each step's colour instead of emoji. */
+.hitl-step-num svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.step-ai .hitl-step-num{color:#2563eb}.step-expert .hitl-step-num{color:var(--green-dark)}.step-user .hitl-step-num{color:#7c3aed}
+
+/* ══ Security: editorial two-column layout ══
+   Left: heading + a plain spec sheet. Right: the six practices as a numbered
+   list with hairline rules. No cards, icons or badges. */
+.sec-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
+
+.sec-intro .section-title{text-align:left;font-size:2.3rem}
+.sec-intro .section-sub{text-align:left;margin:0 0 36px;max-width:none}
+.sec-specs{margin:0;border-top:1px solid var(--border)}
+.sec-spec{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--border)}
+.sec-spec dt{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim);padding-top:2px}
+.sec-spec dd{margin:0}
+.sec-spec strong{font-size:.92rem;font-weight:700;color:var(--text-heading)}
+.sec-list{list-style:none;margin:0;padding:0}
+.sec-item{display:grid;grid-template-columns:52px 1fr;gap:12px;padding:26px 0;border-bottom:1px solid var(--border)}
+/* No rule above the first item or below the last: stacked on mobile, the list
+   would otherwise sit right under the spec sheet's last rule (two lines in a row). */
+.sec-item:first-child{padding-top:0}
+.sec-item:last-child{border-bottom:none;padding-bottom:0}
+.sec-num{font-size:.8rem;font-weight:800;color:var(--green);letter-spacing:.04em;padding-top:4px;font-variant-numeric:tabular-nums}
+.sec-item h3{font-size:1.08rem;font-weight:800;color:var(--text-heading);margin:0 0 6px}
+.sec-item p{font-size:.9rem;color:var(--text-dim);line-height:1.7;margin:0}
+@media(max-width:1024px){.sec-layout{grid-template-columns:1fr;gap:48px}}
+@media(max-width:560px){.sec-spec{grid-template-columns:1fr;gap:4px}.sec-item{grid-template-columns:40px 1fr}}
+
+/* ══ Footer: brand + three link columns, bottom bar with © and LinkedIn ══ */
+.footer{border-top:1px solid var(--border);padding:64px 0 28px;position:relative;z-index:2;background:#fff}
+.footer-inner{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:40px}
+.footer-tagline{margin:12px 0 0;max-width:320px;font-size:.86rem;line-height:1.6;color:var(--text-dim)}
+.footer-col{display:flex;flex-direction:column;gap:10px}
+.footer-col h4{margin:0 0 4px;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text-heading)}
+.footer-col a{font-size:.86rem;color:var(--text-dim);transition:color .2s;width:fit-content}
+.footer-col a:hover{color:var(--green-dark)}
+.footer-bottom{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:48px;padding-top:22px;border-top:1px solid var(--border)}
+.footer-copy{font-size:.78rem;color:var(--text-dim)}
+.footer-social{margin-top:18px;display:grid;place-items:center;width:34px;height:34px;border-radius:8px;color:var(--text-dim);border:1px solid var(--border);transition:color .2s,border-color .2s}
+.footer-social:hover{color:#0a66c2;border-color:rgba(10,102,194,.35)}
+.footer-social svg{width:16px;height:16px;fill:currentColor}
+@media(max-width:900px){.footer-inner{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-brand{grid-column:1/-1}}
+@media(max-width:560px){.footer{padding-top:48px}.footer-inner{grid-template-columns:1fr 1fr;gap:32px 24px}.footer-col:last-child{grid-column:1/-1}}
+
+/* The green closing phrase of these two headings always starts its own line and
+   never breaks inside (the <br> lives in the markup). */
+.ilegal-section .section-title .accent,.managed-section .section-title .accent{white-space:nowrap}
+@media(max-width:400px){.ilegal-section .section-title,.managed-section .section-title{font-size:1.8rem}}
+/* Phones: CTA buttons of the managed / illegal-trade blocks take the full width
+   and may wrap (in PT "Vamos conversar sobre um piloto →" was wider than the screen). */
+@media(max-width:560px){.managed-btn{white-space:normal;text-align:center;width:100%;justify-content:center}}
+/* PT "Registramos para você." does not fit a 360px phone on one line. */
+@media(max-width:380px){html[lang="pt-BR"] .managed-section .section-title .accent{white-space:normal}}
+/* Footer on tablet/phone: the brand block is centred; on phones every column
+   (Plataforma, Garantías, Contacto) is centred too. */
+@media(max-width:900px){.footer-brand{text-align:center}.footer-tagline{margin-left:auto;margin-right:auto}.footer-social{margin-left:auto;margin-right:auto}}
+@media(max-width:560px){.footer-col{align-items:center;text-align:center}.footer-col a{width:auto}}
